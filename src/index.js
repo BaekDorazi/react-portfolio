@@ -3,12 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Main from './Main';
+import Sidebar from "./components/Sidebar"
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
-    <Main />
+    <Sidebar pageWrapId={"page-wrap"} outerContainerId={"App"} />
+
+    <div id="page-wrap">
+      <Main />
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
