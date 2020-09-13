@@ -4,7 +4,7 @@ class Skill extends Component {
     render() {
         return (
             <div>
-                기술 화면
+                <i className='icon-avatar'>기술 화면</i>
             </div>
         );
     }

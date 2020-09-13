@@ -1,58 +1,70 @@
 import React, { Component } from "react";
-import SideMenu from "../components/SideMenu";
+import ReactFullpage from "@fullpage/react-fullpage";
 import Home from "../pages/home/Home";
 import Profile from "../pages/profile/Profile";
 import Career from "../pages/career/Career";
 import Skill from "../pages/skill/Skill";
 import Portfolio from "../pages/portfolio/Portfolio";
-import ReactPageScroller from "react-page-scroller";
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { currentPage: null };
+    this.state = {};
   }
 
-  handlePageChange = (number) => {
-    this.setState({ currentPage: number }); // set currentPage number, to reset it from the previous selected.
-  };
-
-  getPagesNumbers = () => {
-    const pageNumbers = [];
-
-    for (let i = 1; i <= 5; i++) {
-      pageNumbers
-        .push
-        // <Pager.Item key={i} eventKey={i - 1} onSelect={this.handlePageChange}>
-        //   {i}
-        // </Pager.Item>
-        ();
-    }
-
-    return [...pageNumbers];
-  };
+  onLeave(origin, destination, direction) {
+    console.log("Leaving section " + origin.index);
+  }
+  afterLoad(origin, destination, direction) {
+    console.log("After load: " + destination.index);
+  }
 
   render() {
-    // const pagesNumbers = this.getPagesNumbers();
-
     return (
       <div className="app-container">
-        {/* <Route exact path="/" component={Home} />
-        <Route path="/test" component={Test} /> */}
-        <SideMenu />
-        <ReactPageScroller
-          pageOnChange={this.handlePageChange}
-          customPageNumber={this.state.currentPage}
-        >
-          <Home />
-          <Profile />
-          <Career />
-          <Skill />
-          <Portfolio />
-        </ReactPageScroller>
-        {/* <Pager className="pagination-additional-class" bsSize="large">
-          {pagesNumbers}
-        </Pager> */}
+        <ReactFullpage
+          anchors={["Home", "Profile", "Career", "Skill", "Portfolio"]}
+          sectionsColor={[
+            "#282c34",
+            "#ff5f45",
+            "#0798ec",
+            "#532391",
+            "#ab8121",
+          ]}
+          scrollOverflow={true}
+          navigation={true}
+          onLeave={this.onLeave.bind(this)}
+          afterLoad={this.afterLoad.bind(this)}
+          render={({ state, fullpageApi }) => {
+            return (
+              <div id="fullpage-wrapper">
+                <div className="section section1">
+                  <Home />
+                </div>
+                <div className="section">
+                  <Profile />
+                </div>
+                <div className="section">
+                  <Career />
+                </div>
+                <div className="section">
+                  <Skill />
+                </div>
+                <div className="section">
+                  <div className="slide">
+                    <Portfolio />
+                  </div>
+                  <div className="slide">
+                    <Portfolio />
+                  </div>
+                  <div className="slide">
+                    <Portfolio />
+                  </div>
+                </div>
+              </div>
+            );
+          }}
+        />
       </div>
     );
   }
