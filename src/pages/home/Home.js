@@ -18,11 +18,7 @@ class Home extends Component {
   componentWillUnmount() {}
 
   render() {
-    return (
-      <div style ={{fontSize:"300px"}}>
-        <i className="icon-avatar">홈 화면</i>
-      </div>
-    );
+    return <div>소개 화면</div>;
   }
 }
 
