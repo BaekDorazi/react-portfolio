@@ -9,11 +9,11 @@ class Header extends Component {
           <img src={logoImg} width="45px" height="45px" />
         </div>
         <div className="menu">
-          <div>
-            <i className="icon-avatar"> 내 정보</i>
+          <div className="my-info-icon">
+            <i className="icon-avatar" />
           </div>
-          <div>
-            <i className="icon-logout">로그아웃</i>
+          <div className="logout-icon">
+            <i className="icon-logout" />
           </div>
         </div>
       </div>
