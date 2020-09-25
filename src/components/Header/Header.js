@@ -1,10 +1,13 @@
 import React, { Component } from "react";
+import logoImg from "../../images/001-knight.png";
 
 class Header extends Component {
   render() {
     return (
       <div className="abs header">
-        <div className="logo">로고</div>
+        <div className="logo-container">
+          <img src={logoImg} width="45px" height="45px" />
+        </div>
         <div className="menu">
           <div>
             <i className="icon-avatar"> 내 정보</i>
