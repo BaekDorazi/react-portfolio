@@ -18,7 +18,13 @@ class Home extends Component {
   componentWillUnmount() {}
 
   render() {
-    return <div>소개 화면</div>;
+    return (
+      <div className="home-container">
+        안녕하세요. (나이)살(성별) (이름)입니다.
+        <br />
+        (직업 or 하는일)
+      </div>
+    );
   }
 }
 

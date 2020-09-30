@@ -24,18 +24,19 @@ class Header extends Component {
     return (
       <div className="abs header">
         <div className="logo-container">
-          <img src={logoImg} width="45px" height="45px" />
+          {/* <img src={logoImg} width="45px" height="45px" /> */}
+
         </div>
         <div className="menu">
-          <div className="my-info-icon" onClick={this.toggleModal}>
+          {/* <div className="my-info-icon" onClick={this.toggleModal}>
             <i className="icon-avatar" />
           </div>
           <div className="logout-icon">
             <i className="icon-logout" />
-          </div>
+          </div> */}
         </div>
 
-        <MyInfoModal isOpen={myInfoModalStatus} toggle={this.toggleModal} />
+        {/* <MyInfoModal isOpen={myInfoModalStatus} toggle={this.toggleModal} /> */}
       </div>
     );
   }

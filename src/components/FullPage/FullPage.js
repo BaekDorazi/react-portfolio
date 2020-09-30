@@ -19,13 +19,13 @@ class FullPage extends Component {
       <div className="abs">
         <ReactFullpage
           anchors={["Home", "Profile", "Career", "Skill", "Portfolio"]}
-          sectionsColor={[
-            "#FFA9B0",
-            "#CCD1FF",
-            "#FFDDA6",
-            "#BBD1E8",
-            "#F8E5D0",
-          ]}
+          // sectionsColor={[
+          //   "#FFA9B0",
+          //   "#CCD1FF",
+          //   "#FFDDA6",
+          //   "#BBD1E8",
+          //   "#F8E5D0",
+          // ]}
           scrollOverflow={true}
           navigation={true}
           navigationPosition={"left"}
