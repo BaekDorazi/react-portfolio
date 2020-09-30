@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import introImg from "../../images/intro-img.png";
-// import logoImg from "../../images/001-knight.png";
+import bloodHandImg from "../../images/blood-hand.png";
 
 class Intro extends Component {
   constructor(props) {
@@ -32,8 +32,12 @@ class Intro extends Component {
             Web Design / Publisher
           </div>
         </div>
-
-        <img className="intro-image" src={introImg} height="65%" />
+        <div className="intro-image-area">
+          <img className="intro-image" src={introImg} height="55%" />
+          <img className="blood-hand-image1" src={bloodHandImg} height="7%" />
+          <img className="blood-hand-image2" src={bloodHandImg} height="7%" />
+          <img className="blood-hand-image3" src={bloodHandImg} height="7%" />
+        </div>
       </div>
     );
   }

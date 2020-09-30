@@ -27,10 +27,40 @@
     }
   }
 
-  .intro-image {
-    align-self: flex-end;
-    padding-right: 10%;
-    padding-bottom: 5%;
+  .intro-image-area {
+    display: flex;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    .intro-image {
+      position: absolute;
+      align-self: flex-end;
+      right: 0;
+      bottom: 0;
+    }
+
+    .blood-hand-image1 {
+      position: absolute;
+      right: 0;
+      bottom: 450px;
+      opacity: 0;
+    }
+
+    .blood-hand-image2 {
+      position: absolute;
+      right: 100px;
+      bottom: 520px;
+      transition-delay: 1s;
+    }
+
+    .blood-hand-image3 {
+      position: absolute;
+      right: 200px;
+      bottom: 430px;
+      transition-delay: 3s;
+    }
   }
 }
 
