@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import ContentRect from "../../components/common/ContentRect";
 
 class Skill extends Component {
     render() {
         return (
-            <div>
-                <i className='icon-avatar'>기술 화면</i>
+            <div className="skill-container">
+                <ContentRect />
             </div>
         );
     }
