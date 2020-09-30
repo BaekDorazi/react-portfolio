@@ -4,8 +4,37 @@
   display: flex;
   background: linear-gradient(to bottom, #000000, #111111);
 
-  .test {
+  .intro-content {
     align-self: center;
-    margin-left: 30%;
+    margin-left: 15%;
+    text-align: left;
+
+    .first-line {
+      margin-bottom: 18px;
+    }
+
+    .second-line {
+      font-family: "Bombardier", sans-serif;
+    }
+
+    .third-line {
+      margin-bottom: 30px;
+      font-family: "Bombardier", sans-serif;
+    }
+
+    .fourth-line {
+    }
   }
+}
+
+.font-size-12pt {
+  font-size: 12pt;
+}
+
+.font-size-30pt {
+  font-size: 30pt;
+}
+
+.font-size-12pt {
+  font-size: 10pt;
 }

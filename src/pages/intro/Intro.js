@@ -20,10 +20,16 @@ class Intro extends Component {
   render() {
     return (
       <div className="intro-container">
-        <div className="test">
-          안녕하세요. (나이)살(성별) (이름)입니다.
-          <br />
-          (직업 or 하는일)
+        <div className="intro-content">
+          <div className="font-size-12pt first-line">Hi, my name is</div>
+          <div className="font-size-30pt second-line">Yusunhee.</div>
+          <div className="font-size-30pt third-line">
+            All I Wanna Do{" "}
+            <font className="yellow-font">Design&Programming.</font>
+          </div>
+          <div className="font-size-10pt fourth-line">
+            Web Design / Publisher
+          </div>
         </div>
       </div>
     );
