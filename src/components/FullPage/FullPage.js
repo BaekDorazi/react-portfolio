@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
-import Home from "../../pages/home/Home";
+import Intro from "../../pages/intro/Intro";
 import Profile from "../../pages/profile/Profile";
 import Career from "../../pages/career/Career";
 import Skill from "../../pages/skill/Skill";
@@ -8,17 +8,17 @@ import Portfolio from "../../pages/portfolio/Portfolio";
 
 class FullPage extends Component {
   onLeave(origin, destination, direction) {
-    console.log("Leaving section " + origin.index);
+    console.log("Leaving section ", destination);
   }
   afterLoad(origin, destination, direction) {
-    console.log("After load: " + destination.index);
+    console.log("after load ", destination);
   }
 
   render() {
     return (
       <div className="abs">
         <ReactFullpage
-          anchors={["Home", "Profile", "Career", "Skill", "Portfolio"]}
+          anchors={["Intro", "Profile", "Career", "Skill", "Portfolio"]}
           // sectionsColor={[
           //   "#FFA9B0",
           //   "#CCD1FF",
@@ -30,7 +30,7 @@ class FullPage extends Component {
           navigation={true}
           navigationPosition={"left"}
           navigationTooltips={[
-            "Home",
+            "Intro",
             "Profile",
             "Career",
             "Skill",
@@ -42,7 +42,7 @@ class FullPage extends Component {
             return (
               <div id="fullpage-wrapper">
                 <div className="section section1">
-                  <Home />
+                  <Intro />
                 </div>
                 <div className="section">
                   <Profile />

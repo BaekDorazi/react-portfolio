@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class Home extends Component {
+class Intro extends Component {
   constructor(props) {
     super(props);
 
@@ -19,13 +19,15 @@ class Home extends Component {
 
   render() {
     return (
-      <div className="home-container">
-        안녕하세요. (나이)살(성별) (이름)입니다.
-        <br />
-        (직업 or 하는일)
+      <div className="intro-container">
+        <div className="test">
+          안녕하세요. (나이)살(성별) (이름)입니다.
+          <br />
+          (직업 or 하는일)
+        </div>
       </div>
     );
   }
 }
 
-export default Home;
+export default Intro;

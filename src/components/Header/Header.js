@@ -23,20 +23,11 @@ class Header extends Component {
 
     return (
       <div className="abs header">
-        <div className="logo-container">
-          {/* <img src={logoImg} width="45px" height="45px" /> */}
-
+        <div className="logo">
+          <font className="nanumsquare-light">Zombie</font>
+          <font className="nanumsquare-extra-bold">Couple</font>
         </div>
-        <div className="menu">
-          {/* <div className="my-info-icon" onClick={this.toggleModal}>
-            <i className="icon-avatar" />
-          </div>
-          <div className="logout-icon">
-            <i className="icon-logout" />
-          </div> */}
-        </div>
-
-        {/* <MyInfoModal isOpen={myInfoModalStatus} toggle={this.toggleModal} /> */}
+        <div className="page-title">1.Intro</div>
       </div>
     );
   }

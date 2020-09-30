@@ -1,6 +1,11 @@
-.home-container {
+.intro-container {
   width: 100%;
   height: 100%;
   display: flex;
   background: linear-gradient(to bottom, #000000, #111111);
+
+  .test {
+    align-self: center;
+    margin-left: 30%;
+  }
 }
