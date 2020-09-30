@@ -3,10 +3,11 @@
   height: 100%;
   display: flex;
   background: linear-gradient(to bottom, #000000, #111111);
+  justify-content: space-between;
 
   .intro-content {
     align-self: center;
-    margin-left: 15%;
+    margin-left: 20%;
     text-align: left;
 
     .first-line {
@@ -24,6 +25,12 @@
 
     .fourth-line {
     }
+  }
+
+  .intro-image {
+    align-self: flex-end;
+    padding-right: 10%;
+    padding-bottom: 5%;
   }
 }
 
