@@ -15,6 +15,8 @@ class FullPage extends Component {
   }
 
   render() {
+    const { userNum } = this.props;
+    
     return (
       <div className="abs">
         <ReactFullpage

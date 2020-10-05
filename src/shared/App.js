@@ -11,7 +11,8 @@ class App extends Component {
   render() {
     return (
       <div className="app-container">
-        <FullPage className="full-page" />
+        {/* userInfo : 1(백도형), 2(유선희) */}
+        <FullPage className="full-page" userNum={1} />
         <Header />
       </div>
     );
