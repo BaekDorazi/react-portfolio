@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import logoImg from "../../images/001-knight.png";
 import MyInfoModal from "../Modal/MyInfoModal";
+import Menu from "../../components/Menu/Menu";
 
 class Header extends Component {
   constructor(props) {
@@ -27,7 +28,9 @@ class Header extends Component {
           <font className="nanumsquare-light">Zombie</font>
           <font className="nanumsquare-extra-bold">Couple</font>
         </div>
-        <div className="page-title">1.Intro</div>
+        <div className="page-title">
+          <Menu />
+        </div>
       </div>
     );
   }
