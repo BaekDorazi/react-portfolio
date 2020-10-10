@@ -18,7 +18,7 @@ class Menu extends Component {
         <ReactFullpage
           render={({ state, fullpageApi }) => {
             return (
-              <div style={{ display: "flex" }}>
+              <div className="menu">
                 <div onClick={() => fullpageApi.moveTo(1, 0)}>Intro</div>
                 <div onClick={() => fullpageApi.moveTo(2, 0)}>Profile</div>
                 <div onClick={() => fullpageApi.moveTo(3, 0)}>Career</div>
