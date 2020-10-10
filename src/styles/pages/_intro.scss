@@ -10,6 +10,22 @@
 
   .intro-content {
     align-self: center;
+    padding-right: 15px;
+  }
+
+  .intro-text-cursor {
+    border-right: 0.5em solid #fff;
+    animation: blink 1s step-end infinite;
+  }
+
+  @keyframes blink {
+    0%,
+    100% {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #fff;
+    }
   }
 }
 

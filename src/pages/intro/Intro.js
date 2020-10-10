@@ -25,7 +25,7 @@ class Intro extends Component {
 
     return (
       <div className="intro-container">
-        <div className="intro-content">
+        <div className="intro-content intro-text-cursor">
           {/* <Typing loop onFinishedTyping={this.showCursor}> */}
           <Typing onFinishedTyping={this.showCursor}>
             <Typing.Delay ms={0} />
