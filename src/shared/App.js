@@ -14,13 +14,13 @@ class App extends Component {
     if (!isSetTimeOut) {
       setTimeout(() => {
         this.setState({ isSetTimeOut: true });
-      }, 2000);
+      }, 3000);
     }
 
     return (
       <div>
         {!isSetTimeOut && (
-          <div>
+          <div style={{ width: "100%", height: "100%" }}>
             <Launcher />
           </div>
         )}
