@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import logoImg from "../../images/001-knight.png";
 import MyInfoModal from "../Modal/MyInfoModal";
 import Menu from "../../components/Menu/Menu";
 import ReactFullpage from "@fullpage/react-fullpage";
