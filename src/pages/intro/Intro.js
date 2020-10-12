@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import introImg from "../../images/intro-img.png";
-import bloodHandImg from "../../images/blood-hand.png";
 import Typing from "react-typing-animation";
 
 class Intro extends Component {
@@ -32,7 +30,7 @@ class Intro extends Component {
             <div className="font-size-50pt">
               {userNum === 1
                 ? "Developer 백도형 포트폴리오입니다."
-                : "디자이너 유선희 포트폴리오입니다."}
+                : "백도형과 유선희의 포폴이에여♥ 화이팅"}
               {/* <Typing.Reset delay={10000} /> */}
             </div>
           </Typing>
