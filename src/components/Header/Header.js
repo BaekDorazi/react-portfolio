@@ -13,7 +13,6 @@ class Header extends Component {
   handleClickLogo = () => {};
 
   toggleModal = () => {
-    console.log("==toggleModal ");
     this.setState({
       myInfoModalStatus: !this.state.myInfoModalStatus,
     });

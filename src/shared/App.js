@@ -1,16 +1,30 @@
 import React, { Component } from "react";
-import Header from "../components/Header/Header";
-import FullPage from "../components/FullPage/FullPage";
-import Launcher from "../components/Launcher/Launcher";
+import Header from "components/Header/Header";
+import FullPage from "components/FullPage/FullPage";
+import Launcher from "components/Launcher/Launcher";
+
+import { connect } from "react-redux";
+import { setAppState } from "store/modules/AppConfig";
+
+const mapStateToProps = ({}) => ({});
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { isSetTimeOut: false };
+    this.state = {
+      isSetTimeOut: false,
+      userNum: 2, //1: 백도형, 2: 유선희
+    };
+  }
+
+  componentDidMount() {
+    const { setAppState } = this.props;
+    setAppState(this.state); //App의 state 값을 저장
   }
 
   render() {
     const { isSetTimeOut } = this.state;
+
     if (!isSetTimeOut) {
       setTimeout(() => {
         this.setState({ isSetTimeOut: true });
@@ -26,8 +40,7 @@ class App extends Component {
         )}
         {isSetTimeOut && (
           <div className="app-container">
-            {/* userInfo : 1(백도형), 2(유선희) */}
-            <FullPage className="full-page" userNum={1} />
+            <FullPage className="full-page" />
             <Header />
           </div>
         )}
@@ -36,4 +49,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default connect(mapStateToProps, { setAppState })(App);

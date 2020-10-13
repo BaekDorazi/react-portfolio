@@ -10,8 +10,7 @@ class Header extends Component {
 
   render() {
     const { isOpen, toggle } = this.props;
-
-    console.log("isOpen == ", isOpen);
+    
     return (
       <div>
         <Modal isOpen={isOpen} toggle={toggle}>
