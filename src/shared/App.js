@@ -14,7 +14,7 @@ class App extends Component {
     if (!isSetTimeOut) {
       setTimeout(() => {
         this.setState({ isSetTimeOut: true });
-      }, 3000);
+      }, 2000);
     }
 
     return (
