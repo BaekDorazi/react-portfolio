@@ -1,23 +1,14 @@
 .header {
   width: 100%;
   display: flex;
-  // justify-content: space-between;
   justify-content: center;
   align-items: center;
 
-  .logo {
-    margin-left: 50px;
-    color: #e2cb00;
-    font-size: 18pt;
-    font-family: "NanumSquare", sans-serif;
-    cursor: pointer;
-  }
-
   .page-title {
-    margin-right: 50px;
     color: #ffffff;
-    font-size: 12pt;
+    font-size: 13pt;
     font-family: "NanumSquare", sans-serif;
+    width: 40%;
   }
 }
 
