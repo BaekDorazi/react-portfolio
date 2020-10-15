@@ -22,8 +22,8 @@ class Menu extends Component {
                 <div onClick={() => fullpageApi.moveTo(1, 0)}>Intro</div>
                 <div onClick={() => fullpageApi.moveTo(2, 0)}>Profile</div>
                 <div onClick={() => fullpageApi.moveTo(3, 0)}>Career</div>
-                <div onClick={() => fullpageApi.moveTo(4, 0)}>Skill</div>
-                <div onClick={() => fullpageApi.moveTo(5, 0)}>Portfolio</div>
+                <div onClick={() => fullpageApi.moveTo(4, 0)}>Portfolio</div>
+                <div onClick={() => fullpageApi.moveTo(5, 0)}>Contact</div>
               </div>
             );
           }}

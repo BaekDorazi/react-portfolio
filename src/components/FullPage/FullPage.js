@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
-import Intro from "../../pages/intro/Intro";
-import Profile from "../../pages/profile/Profile";
-import Career from "../../pages/career/Career";
-import Skill from "../../pages/skill/Skill";
-import Portfolio from "../../pages/portfolio/Portfolio";
+import Intro from "pages/intro/Intro";
+import Profile from "pages/profile/Profile";
+import Career from "pages/career/Career";
+import Portfolio from "pages/portfolio/Portfolio";
+import Contact from "pages/contact/Contact";
 
 class FullPage extends Component {
   onLeave(origin, destination, direction) {
@@ -16,11 +16,11 @@ class FullPage extends Component {
 
   render() {
     const { userNum } = this.props;
-    
+
     return (
       <div className="abs">
         <ReactFullpage
-          anchors={["Intro", "Profile", "Career", "Skill", "Portfolio"]}
+          anchors={["Intro", "Profile", "Career", "Portfolio", "Contact"]}
           // sectionsColor={[
           //   "#FFA9B0",
           //   "#CCD1FF",
@@ -35,8 +35,8 @@ class FullPage extends Component {
             "Intro",
             "Profile",
             "Career",
-            "Skill",
             "Portfolio",
+            "Contact",
           ]}
           onLeave={this.onLeave.bind(this)}
           afterLoad={this.afterLoad.bind(this)}
@@ -53,18 +53,18 @@ class FullPage extends Component {
                   <Career />
                 </div>
                 <div className="section">
-                  <Skill />
+                  <div className="slide">
+                    <Portfolio />
+                  </div>
+                  <div className="slide">
+                    <Portfolio />
+                  </div>
+                  <div className="slide">
+                    <Portfolio />
+                  </div>
                 </div>
                 <div className="section">
-                  <div className="slide">
-                    <Portfolio />
-                  </div>
-                  <div className="slide">
-                    <Portfolio />
-                  </div>
-                  <div className="slide">
-                    <Portfolio />
-                  </div>
+                  <Contact />
                 </div>
               </div>
             );
