@@ -3,7 +3,9 @@
   height: 100%;
   display: flex;
   background-color: #000000;
-  background-size: auto;
+  background-image: url("../../images/intro_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
   justify-content: center;
 
   .intro-content {

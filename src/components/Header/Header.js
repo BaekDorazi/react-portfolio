@@ -1,15 +1,5 @@
 import React, { Component } from "react";
 import Menu from "components/Menu/Menu";
-import ReactFullpage from "@fullpage/react-fullpage";
-
-import { connect } from "react-redux";
-
-import dhLogo from "images/logo_dh.png";
-import shLogo from "images/logo_sh.png";
-
-const mapStateToProps = ({ appConfig }) => ({
-  userNum: appConfig.appState.userNum,
-});
 
 class Header extends Component {
   constructor(props) {
@@ -27,22 +17,9 @@ class Header extends Component {
   };
 
   render() {
-    const { userNum, showPageName } = this.props;
+    const { showPageName } = this.props;
     return (
       <div className="abs header line-bottom">
-        <ReactFullpage
-          render={({ state, fullpageApi }) => {
-            return (
-              <div className="logo" onClick={() => fullpageApi.moveTo(1, 0)}>
-                {userNum === 1 ? (
-                  <img src={dhLogo} width="100px" height="auto" />
-                ) : (
-                  <img src={shLogo} width="100px" height="auto" />
-                )}
-              </div>
-            );
-          }}
-        />
         <div className="page-title">
           <Menu showPageName={showPageName} />
         </div>
@@ -51,4 +28,4 @@ class Header extends Component {
   }
 }
 
-export default connect(mapStateToProps, {})(Header);
+export default Header;

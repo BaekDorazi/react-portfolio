@@ -13,7 +13,6 @@ class App extends Component {
     super(props);
     this.state = {
       isSetTimeOut: false, //런쳐 화면 보여주기 위한 state 값
-      userNum: 2, //1: 백도형, 2: 유선희
       showPageName: null, //현재 보여지는 페이지 저장
     };
   }
