@@ -12,8 +12,9 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isSetTimeOut: false,
+      isSetTimeOut: false, //런쳐 화면 보여주기 위한 state 값
       userNum: 2, //1: 백도형, 2: 유선희
+      showPageName: null, //현재 보여지는 페이지 저장
     };
   }
 
@@ -22,8 +23,23 @@ class App extends Component {
     setAppState(this.state); //App의 state 값을 저장
   }
 
+  componentDidUpdate(nextProps, nextState) {
+    const { setAppState } = this.props;
+
+    if (this.state !== nextState) {
+      setAppState(this.state);
+    }
+  }
+
+  //현재 보여지는 페이지 이름 가지고 오는 method
+  handlePageChange = (pageName) => {
+    this.setState({
+      showPageName: pageName,
+    });
+  };
+
   render() {
-    const { isSetTimeOut } = this.state;
+    const { isSetTimeOut, showPageName } = this.state;
 
     if (!isSetTimeOut) {
       setTimeout(() => {
@@ -40,8 +56,11 @@ class App extends Component {
         )}
         {isSetTimeOut && (
           <div className="app-container">
-            <FullPage className="full-page" />
-            <Header />
+            <FullPage
+              className="full-page"
+              handlePageChange={this.handlePageChange}
+            />
+            <Header showPageName={showPageName} />
           </div>
         )}
       </div>

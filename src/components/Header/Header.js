@@ -27,7 +27,7 @@ class Header extends Component {
   };
 
   render() {
-    const { userNum } = this.props;
+    const { userNum, showPageName } = this.props;
     return (
       <div className="abs header line-bottom">
         <ReactFullpage
@@ -44,7 +44,7 @@ class Header extends Component {
           }}
         />
         <div className="page-title">
-          <Menu />
+          <Menu showPageName={showPageName} />
         </div>
       </div>
     );

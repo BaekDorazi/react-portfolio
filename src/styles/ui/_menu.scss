@@ -3,12 +3,20 @@
   margin: 0;
   padding: 0;
 
-  div {
+  //메뉴 기본 상태
+  .menu-btn {
     flex: 1;
     margin: 0 30px 0 10px;
     cursor: pointer;
   }
-  div:hover {
-      color: rgb(229, 255, 0);
+  
+  //메뉴 마우스 over 됐을 때 상태
+  .menu-btn:hover {
+    color: rgb(229, 255, 0);
+  }
+
+  //메뉴 선택 되어있는 상태
+  .selected-menu {
+    color: brown;
   }
 }

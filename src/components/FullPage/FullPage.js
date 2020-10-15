@@ -10,24 +10,19 @@ class FullPage extends Component {
   onLeave(origin, destination, direction) {
     console.log("Leaving section ", destination);
   }
+
   afterLoad(origin, destination, direction) {
     console.log("after load ", destination);
+    const { handlePageChange } = this.props;
+    
+    handlePageChange(destination.anchor);
   }
 
   render() {
-    const { userNum } = this.props;
-
     return (
       <div className="abs">
         <ReactFullpage
           anchors={["Intro", "Profile", "Career", "Portfolio", "Contact"]}
-          // sectionsColor={[
-          //   "#FFA9B0",
-          //   "#CCD1FF",
-          //   "#FFDDA6",
-          //   "#BBD1E8",
-          //   "#F8E5D0",
-          // ]}
           scrollOverflow={true}
           navigation={true}
           navigationPosition={"left"}
