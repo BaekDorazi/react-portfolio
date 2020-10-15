@@ -1,13 +1,21 @@
 import React, { Component } from "react";
-import MyInfoModal from "../Modal/MyInfoModal";
-import Menu from "../../components/Menu/Menu";
+import Menu from "components/Menu/Menu";
 import ReactFullpage from "@fullpage/react-fullpage";
+
+import { connect } from "react-redux";
+
+import dhLogo from "images/logo_dh.png";
+import shLogo from "images/logo_sh.png";
+
+const mapStateToProps = ({ appConfig }) => ({
+  userNum: appConfig.appState.userNum,
+});
 
 class Header extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { myInfoModalStatus: false };
+    this.state = {};
   }
 
   handleClickLogo = () => {};
@@ -19,15 +27,18 @@ class Header extends Component {
   };
 
   render() {
-    const { myInfoModalStatus } = this.state;
+    const { userNum } = this.props;
     return (
       <div className="abs header line-bottom">
         <ReactFullpage
           render={({ state, fullpageApi }) => {
             return (
               <div className="logo" onClick={() => fullpageApi.moveTo(1, 0)}>
-                <font className="nanumsquare-light">Zombie</font>
-                <font className="nanumsquare-extra-bold">Couple</font>
+                {userNum === 1 ? (
+                  <img src={dhLogo} width="100px" height="auto" />
+                ) : (
+                  <img src={shLogo} width="100px" height="auto" />
+                )}
               </div>
             );
           }}
@@ -40,4 +51,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default connect(mapStateToProps, {})(Header);
