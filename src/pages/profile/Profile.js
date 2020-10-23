@@ -5,48 +5,39 @@ class Profile extends Component {
   render() {
     return (
       <div className="profile-container">
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="our-team">
+        <div className="test">선희누나 세젤예</div>
+        <div className="profile-frame">
+          <div class="profile-image">
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
             <div class="picture">
-              <img
-                class="img-fluid"
-                src={profileImg}
-              />
+              <img class="img-fluid" src={profileImg} />
             </div>
-            <div class="team-content">
-              <h3 class="name">Michele Miller</h3>
-              <h4 class="title">Web Developer</h4>
+          </div>
+
+          <div className="profile-button">
+            <div class="name">yusunhee</div>
+            <div class="job">Web Publisher</div>
+
+            <div class="actions">
+              <button class="btn">Follow</button>
+              <button class="btn">Message</button>
             </div>
-            <ul class="social">
-              <li>
-                <a
-                  href="https://codepen.io/collection/XdWJOQ/"
-                  class="fa fa-facebook"
-                  aria-hidden="true"
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://codepen.io/collection/XdWJOQ/"
-                  class="fa fa-twitter"
-                  aria-hidden="true"
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://codepen.io/collection/XdWJOQ/"
-                  class="fa fa-google-plus"
-                  aria-hidden="true"
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://codepen.io/collection/XdWJOQ/"
-                  class="fa fa-linkedin"
-                  aria-hidden="true"
-                ></a>
-              </li>
-            </ul>
+          </div>
+
+          <div class="stats">
+            <div class="box">
+              <span class="value">124</span>
+              <span class="parameter">Posts</span>
+            </div>
+            <div class="box">
+              <span class="value">4357</span>
+              <span class="parameter">Likes</span>
+            </div>
+            <div class="box">
+              <span class="value">1180</span>
+              <span class="parameter">Follower</span>
+            </div>
           </div>
         </div>
       </div>
