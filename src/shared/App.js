@@ -22,10 +22,10 @@ class App extends Component {
     setAppState(this.state); //App의 state 값을 저장
   }
 
-  componentDidUpdate(nextProps, nextState) {
+  componentDidUpdate(prevProps, prevState) {
     const { setAppState } = this.props;
 
-    if (this.state !== nextState) {
+    if (this.state !== prevState) {
       setAppState(this.state);
     }
   }

@@ -14,7 +14,7 @@ class FullPage extends Component {
   afterLoad(origin, destination, direction) {
     console.log("after load ", destination);
     const { handlePageChange } = this.props;
-    
+
     handlePageChange(destination.anchor);
   }
 
@@ -45,7 +45,14 @@ class FullPage extends Component {
                   <Profile />
                 </div>
                 <div className="section">
-                  <Career />
+                  <Career
+                    isPageFocus={
+                      !state.destination ||
+                      state.destination.anchor === "Career"
+                        ? true
+                        : false
+                    } //Career 페이지에 포커싱 되어있을때
+                  />
                 </div>
                 <div className="section">
                   <div className="slide">
