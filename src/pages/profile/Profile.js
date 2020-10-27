@@ -5,38 +5,85 @@ class Profile extends Component {
   render() {
     return (
       <div className="profile-container">
-        <div className="test">선희누나 세젤예</div>
-        <div className="profile-frame">
-          <div class="profile-image">
-            <div class="circle-1"></div>
-            <div class="circle-2"></div>
-            <div class="picture">
-              <img class="img-fluid" src={profileImg} />
-            </div>
+        <div className="text">
+          <h2 className="main-title">
+            실패를 두려워하지 않는 자만이
+            <br />
+            가능성을 열 수 있다.
+          </h2>
+          <div className="contents">
+            <b>연구하고 노력하고 끊임없는 의문을 던지는 디자이너,</b>
+            <br />
+            문제 해결을 위해 고민할 줄 알고 그 문제를 해결할 줄 아는 능력을
+            키우는 것.
+            <br />
+            아마 이건 끝없는 노력을 통해서만 이루어질 수 있는 것이라고
+            생각합니다.
+            <br />
+            <br />
+            아이디어를 내고 컨셉을 고민하며,
+            <br />
+            소비자의 need와 want를 제대로 표현할 수 있는 노하우.
+            <br />
+            그것은 책상에 가만히 앉아 고민만 하지 말고 직접 발로 뛰어야 한다는
+            것입니다.
+            <br />
+            <br />
+            그들이 필요한 것과 원하는 곳에 가보고 체험하고 느꼈고
+            <br />그 와중에 자료를 모색해야 만이 커뮤니케이션을 원활히 할 수
+            있습니다.
+            <br />
+            <br />
+            학창시절과 사회 현장에서 맺었던 작은 인연들 즉, 다방면의 디자인
+            작업들과
+            <br />
+            촬영, 기획, 편집 등은 앞으로 해 나가야 할 작업들의 좋은 기반이
+            되었고
+            <br />
+            그만큼 실수도 줄일 수 있는 한번 더 생각하는 신중함을 배우게
+            되었습니다.
+            <br />
+            <br />
+            이러한 경험을 거치면서 기발한 디자인 컨셉을 잡으면
+            <br />
+            모든 프로젝트가 완성되기까지 사람과 소비자 간의 크리에이티브를
+            <br />
+            최상으로 이끌 수 있는 디자이너가 되겠다는 목표를 가질 수 있었습니다.
           </div>
-
-          <div className="profile-button">
-            <div class="name">yusunhee</div>
-            <div class="job">Web Publisher</div>
-
-            <div class="actions">
-              <button class="btn">Follow</button>
-              <button class="btn">Message</button>
+        </div>
+        <div className="profile">
+          <div className="profile-frame">
+            <div class="profile-image">
+              <div class="circle-1"></div>
+              <div class="circle-2"></div>
+              <div class="picture">
+                <img class="img-fluid" src={profileImg} />
+              </div>
             </div>
-          </div>
 
-          <div class="stats">
-            <div class="box">
-              <span class="value">124</span>
-              <span class="parameter">Posts</span>
+            <div className="profile-button">
+              <div class="name">yusunhee</div>
+              <div class="job">Web Publisher</div>
+
+              <div class="actions">
+                <button class="btn">Follow</button>
+                <button class="btn">Message</button>
+              </div>
             </div>
-            <div class="box">
-              <span class="value">4357</span>
-              <span class="parameter">Likes</span>
-            </div>
-            <div class="box">
-              <span class="value">1180</span>
-              <span class="parameter">Follower</span>
+
+            <div class="stats">
+              <div class="box">
+                <span class="icon-mail value"></span>
+                <span class="parameter">mail</span>
+              </div>
+              <div class="box">
+                <i className="icon-instagram value"></i>
+                <span class="parameter">instagram</span>
+              </div>
+              <div class="box">
+                <span class="icon-github value"></span>
+                <span class="parameter">github</span>
+              </div>
             </div>
           </div>
         </div>
