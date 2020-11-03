@@ -11,20 +11,25 @@
 
     //날짜 영역
     .timeline-item-dateinner {
-      background: #000000;
+      background: #000;
       color: #fff;
       font-size: 13px;
+      font-weight: 500;
       clip-path: polygon(0% 0%, 70% 0%, 100% 50%, 70% 100%, 0% 100%);
       width: 40%;
       float: right;
+    }
+    .entry .title:before {
+      border: 3px #000 solid;
+      background: #000;
     }
   }
 
   //스킬 영역
   .skill-container {
     flex: 1;
-    align-self: center;
     display: flex;
+    margin-top: 150px;
     justify-content: space-around;
 
     .left-chart-container {
