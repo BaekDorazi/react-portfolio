@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Line } from "rc-progress";
+import { Circle } from "rc-progress";
 
 class SkillProgress extends Component {
   constructor(props) {
@@ -48,19 +48,22 @@ class SkillProgress extends Component {
 
   render() {
     const { percent } = this.state;
-    const { percentVal, color } = this.props;
+    const { color } = this.props;
 
     const containerStyle = {
-      width: "350px",
+      width: "150px",
     };
 
     return (
       <div>
-        <div>
-          <div style={containerStyle}>
-            <Line percent={percent} strokeWidth="6" strokeColor={color} />
-            <div>{percentVal}%</div>
-          </div>
+        <div style={containerStyle}>
+          <Circle
+            percent={percent}
+            strokeWidth="1"
+            strokeLinecap="round"
+            strokeColor={color}
+          />
+          <div>스킬명</div>
         </div>
       </div>
     );

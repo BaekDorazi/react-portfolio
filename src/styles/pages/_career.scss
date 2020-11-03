@@ -24,6 +24,14 @@
   .skill-container {
     flex: 1;
     align-self: center;
+    display: flex;
+    justify-content: space-around;
+
+    .left-chart-container {
+    }
+
+    .right-chart-container {
+    }
   }
 
   //애니메이션

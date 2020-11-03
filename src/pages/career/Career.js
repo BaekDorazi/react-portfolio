@@ -32,23 +32,44 @@ class Career extends Component {
         </div>
 
         <div className="skill-container">
-          <SkillProgress
-            isPageFocus={isPageFocus}
-            percentVal={70}
-            color={"#123456"}
-          />
+          <div className="left-chart-container">
+            <SkillProgress
+              isPageFocus={isPageFocus}
+              percentVal={70}
+              color={"#123456"}
+            />
 
-          <SkillProgress
-            isPageFocus={isPageFocus}
-            percentVal={30}
-            color={"#ab5482"}
-          />
+            <SkillProgress
+              isPageFocus={isPageFocus}
+              percentVal={30}
+              color={"#ab5482"}
+            />
 
-          <SkillProgress
-            isPageFocus={isPageFocus}
-            percentVal={90}
-            color={"#855124"}
-          />
+            <SkillProgress
+              isPageFocus={isPageFocus}
+              percentVal={90}
+              color={"#855124"}
+            />
+          </div>
+          <div className="right-chart-container">
+            <SkillProgress
+              isPageFocus={isPageFocus}
+              percentVal={70}
+              color={"#123456"}
+            />
+
+            <SkillProgress
+              isPageFocus={isPageFocus}
+              percentVal={30}
+              color={"#ab5482"}
+            />
+
+            <SkillProgress
+              isPageFocus={isPageFocus}
+              percentVal={90}
+              color={"#855124"}
+            />
+          </div>
         </div>
 
         <div className="animation-container">
