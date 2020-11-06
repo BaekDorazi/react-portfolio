@@ -19,12 +19,16 @@ class Career extends Component {
             <TimelineItem dateText="2014.01">
               <h5>자격증명</h5>
               <p>발급기관</p>
+            </TimelineItem>
+            <TimelineItem dateStyle={{ display: "none" }}>
               <h5>자격증명</h5>
               <p>발급기관</p>
             </TimelineItem>
             <TimelineItem dateText="2020.10">
               <h5>자격증명</h5>
               <p>발급기관</p>
+            </TimelineItem>
+            <TimelineItem dateStyle={{ display: "none" }}>
               <h5>자격증명</h5>
               <p>발급기관</p>
             </TimelineItem>
@@ -35,6 +39,8 @@ class Career extends Component {
             <TimelineItem dateText="2020.11">
               <h5>자격증명</h5>
               <p>발급기관</p>
+            </TimelineItem>
+            <TimelineItem dateStyle={{ display: "none" }}>
               <h5>자격증명</h5>
               <p>발급기관</p>
             </TimelineItem>

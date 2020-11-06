@@ -43,27 +43,27 @@ class SkillProgress extends Component {
       return;
     }
     this.setState({ percent: newPercent });
-    this.tm = setTimeout(this.increase, 10); //0.01초 마다 호출
+    this.tm = setTimeout(this.increase, 50); //0.05초 마다 호출
   };
 
   render() {
     const { percent } = this.state;
-    const { color, skillName } = this.props;
+    const { color } = this.props;
 
     const containerStyle = {
-      width: "100px",
+      width: "150px",
     };
 
     return (
       <div>
-        <div className="circle-chart" style={containerStyle}>
+        <div style={containerStyle}>
           <Circle
             percent={percent}
             strokeWidth="1"
             strokeLinecap="round"
             strokeColor={color}
           />
-          <div>{skillName}</div>
+          <div>스킬명</div>
         </div>
       </div>
     );
