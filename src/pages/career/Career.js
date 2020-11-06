@@ -53,6 +53,7 @@ class Career extends Component {
               isPageFocus={isPageFocus}
               percentVal={70}
               color={"#123456"}
+              centerSkillName="PS"
               skillName="Photoshop"
             />
 
@@ -60,6 +61,7 @@ class Career extends Component {
               isPageFocus={isPageFocus}
               percentVal={30}
               color={"#ab5482"}
+              centerSkillName="AI"
               skillName="Illustrator"
             />
 
@@ -67,6 +69,7 @@ class Career extends Component {
               isPageFocus={isPageFocus}
               percentVal={90}
               color={"#855124"}
+              centerSkillName="ID"
               skillName="Indesign"
             />
           </div>
@@ -75,6 +78,7 @@ class Career extends Component {
               isPageFocus={isPageFocus}
               percentVal={70}
               color={"#123456"}
+              centerSkillName="AE"
               skillName="After Effects"
             />
 
@@ -82,6 +86,7 @@ class Career extends Component {
               isPageFocus={isPageFocus}
               percentVal={30}
               color={"#ab5482"}
+              centerSkillName="PR"
               skillName="Premier"
             />
 
@@ -89,6 +94,7 @@ class Career extends Component {
               isPageFocus={isPageFocus}
               percentVal={90}
               color={"#855124"}
+              centerSkillName="H/C"
               skillName="HTML+CSS"
             />
           </div>

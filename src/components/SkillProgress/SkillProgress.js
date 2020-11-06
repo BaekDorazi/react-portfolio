@@ -48,23 +48,24 @@ class SkillProgress extends Component {
 
   render() {
     const { percent } = this.state;
-    const { color } = this.props;
+    const { color, skillName, centerSkillName } = this.props;
 
     const containerStyle = {
-      width: "150px",
+      width: "120px",
     };
 
     return (
-      <div>
-        <div style={containerStyle}>
+      <div className="skill-progress-container" style={containerStyle}>
+        <div className="graph-container">
+          <div className="graph-center-text">{centerSkillName}</div>
           <Circle
             percent={percent}
             strokeWidth="1"
             strokeLinecap="round"
             strokeColor={color}
           />
-          <div>스킬명</div>
         </div>
+        <div className="graph-full-text">{skillName}</div>
       </div>
     );
   }
