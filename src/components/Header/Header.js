@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Logo from "components/Logo/Logo";
 import Menu from "components/Menu/Menu";
 
 class Header extends Component {
@@ -19,9 +20,12 @@ class Header extends Component {
   render() {
     const { showPageName } = this.props;
     return (
-      <div className="abs header line-bottom">
-        <div className="page-title">
-          <Menu showPageName={showPageName} />
+      <div className="abs header">
+        <Logo />
+        <div className="line-bottom">
+          <div className="page-title">
+            <Menu showPageName={showPageName} />
+          </div>
         </div>
       </div>
     );
