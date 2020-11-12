@@ -55,15 +55,7 @@ class FullPage extends Component {
                   />
                 </div>
                 <div className="section">
-                  <div className="slide">
-                    <Portfolio />
-                  </div>
-                  <div className="slide">
-                    <Portfolio />
-                  </div>
-                  <div className="slide">
-                    <Portfolio />
-                  </div>
+                  <Portfolio />
                 </div>
                 <div className="section">
                   <Contact />
