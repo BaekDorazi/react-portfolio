@@ -22,11 +22,7 @@ class Header extends Component {
     return (
       <div className="abs header">
         <Logo />
-        <div className="line-bottom">
-          <div className="page-title">
-            <Menu showPageName={showPageName} />
-          </div>
-        </div>
+        <Menu showPageName={showPageName} />
       </div>
     );
   }

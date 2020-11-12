@@ -7,7 +7,7 @@ class Logo extends Component {
       <div>
         <div className="logo-container">
           <div className="logo">YUSUNHEE</div>
-          <div className="logo-container-right">{moment().format("YYYY.MM")}</div>
+          <div className="date">{moment().format("YYYY.MM")}</div>
         </div>
       </div>
     );

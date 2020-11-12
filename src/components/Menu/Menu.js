@@ -14,7 +14,7 @@ class Menu extends Component {
     const { showPageName } = this.props;
 
     return (
-      <div>
+      <div className="menu-container">
         <ReactFullpage
           render={({ state, fullpageApi }) => {
             return (

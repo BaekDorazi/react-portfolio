@@ -1,20 +1,32 @@
-.menu {
-  display: flex;
+//메뉴 영역
+.menu-container {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  text-align: -webkit-center;
 
-  //메뉴 기본 상태
-  .menu-btn {
-    flex: 1;
-    cursor: pointer;
-    text-align: center;
-  }
+  .menu {
+    display: flex;
+    padding: 10px;
+    width: 40%;
+    font-family: "NanumSquare", sans-serif;
+    color: #000000;
+    font-size: 1rem;
 
-  //메뉴 마우스 over 됐을 때 상태
-  .menu-btn:hover {
-    color: rgb(255, 208, 0);
-  }
+    //메뉴 기본 상태
+    .menu-btn {
+      flex: 1;
+      cursor: pointer;
+      text-align: center;
+    }
 
-  //메뉴 선택 되어있는 상태
-  .selected-menu {
-    color: brown;
+    //메뉴 마우스 over 됐을 때 상태
+    .menu-btn:hover {
+      color: rgb(255, 208, 0);
+    }
+
+    //메뉴 선택 되어있는 상태
+    .selected-menu {
+      color: brown;
+    }
   }
 }
