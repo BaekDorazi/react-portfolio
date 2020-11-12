@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import Logo from "components/Logo/Logo";
-import Menu from "components/Menu/Menu";
+import Logo from "components/Header/Logo";
+import Menu from "components/Header/Menu";
+import SideNav from "components/Header/SideNav";
 
 class Header extends Component {
   constructor(props) {
@@ -23,6 +24,7 @@ class Header extends Component {
       <div className="abs header">
         <Logo />
         <Menu showPageName={showPageName} />
+        <SideNav />
       </div>
     );
   }
