@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-
 class Intro extends Component {
   constructor(props) {
     super(props);
@@ -21,7 +20,7 @@ class Intro extends Component {
   render() {
     return (
       <div className="intro-container">
-
+        <div className="intro-content">MEDIA ART &amp; WEBDESIGN</div>
       </div>
     );
   }
