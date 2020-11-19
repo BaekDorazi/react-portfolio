@@ -1,131 +1,157 @@
 .career-container {
+  display: flex;
   width: 100%;
   height: 100%;
-  display: flex;
-  background-color: #dfdfdf;
+  padding-top: 44px;
+  align-items: center;
+
+  .center-rect {
+    width: 100%;
+    height: 30%;
+    background: #ffb000;
+  }
 
   //자격증 영역
-  .license-container {
-    flex: 1;
-    align-self: center;
-
-    //날짜 영역
-    .timeline-item-dateinner {
-      background: #000;
-      color: #fff;
-      font-size: 13px;
-      font-weight: 500;
-      clip-path: polygon(0% 0%, 70% 0%, 100% 50%, 70% 100%, 0% 100%);
-      width: 40%;
-      float: right;
-    }
-    .entry .title:before {
-      border: 3px #000 solid;
-      background: #000;
-    }
-
-    .entry .body {
-      margin: 0 0 20px;
-    }
-  }
-
-  //스킬 영역
-  .skill-container {
-    flex: 1;
+  .license-skill-container {
     display: flex;
-    margin-top: 150px;
-    justify-content: space-around;
-
-    .left-chart-container {
-    }
-
-    .right-chart-container {
-    }
-  }
-
-  //애니메이션
-  .animation-container {
-    margin: -45px -60px;
-    width: 120px;
-    height: 90px;
+    width: 100%;
+    height: 70%;
     position: absolute;
-    top: 80%;
-    left: 80%;
 
-    .dot {
-      background: #fff;
-      border-radius: 50%;
-      width: 30px;
-      height: 30px;
-      position: absolute;
-      bottom: 30px;
-      left: 27px;
-      transform-origin: center bottom;
-      animation: dot 0.6s ease-in-out infinite;
-    }
+    .license-container {
+      flex: 1;
+      height: 100%;
+      margin: 0 80px;
+      background: rgb(245, 245, 245);
 
-    @keyframes dot {
-      0% {
-        transform: scale(1, 0.7);
+      //날짜 영역
+      .timeline-item-dateinner {
+        // background: #000;
+        color: #fff;
+        font-size: 13px;
+        font-weight: 500;
+        clip-path: polygon(0% 0%, 70% 0%, 100% 50%, 70% 100%, 0% 100%);
+        width: 60%;
+        float: right;
+        background: #ffb000;
       }
-      20% {
-        transform: scale(0.7, 1.2);
+
+      .timeline-item-date {
+        background: whitesmoke;
       }
-      40% {
-        transform: scale(1, 1);
+
+      .entry .title:before {
+        border: 3px #000 solid;
+        background: #000;
       }
-      50% {
-        bottom: 100px;
-      }
-      46% {
-        transform: scale(1, 1);
-      }
-      80% {
-        transform: scale(0.7, 1.2);
-      }
-      90% {
-        transform: scale(0.7, 1.2);
-      }
-      100% {
-        transform: scale(1, 0.7);
+
+      .entry .body {
+        margin: 0 0 20px;
       }
     }
 
-    .step {
-      position: absolute;
-      width: 30px;
-      height: 30px;
-      border-top: 2px solid #fff;
-      top: 0;
-      right: 0;
-    }
+    //스킬 영역
+    .skill-container {
+      flex: 1;
+      height: 100%;
+      margin: 0 80px;
+      background: rgb(245, 245, 245);
+      display: flex;
+      justify-content: space-around;
 
-    @keyframes anim {
-      0% {
-        opacity: 0;
-        top: 0;
-        right: 0;
+      .left-chart-container {
+        align-self: center;
       }
-      50% {
-        opacity: 1;
+
+      .right-chart-container {
+        align-self: center;
       }
-      100% {
-        top: 90px;
-        right: 90px;
-        opacity: 0;
-      }
-    }
-
-    .s1 {
-      animation: anim 1.8s linear infinite;
-    }
-
-    .s2 {
-      animation: anim 1.8s linear infinite -0.6s;
-    }
-
-    .s3 {
-      animation: anim 1.8s linear infinite -1.2s;
     }
   }
+
+  // //애니메이션
+  // .animation-container {
+  //   margin: -45px -60px;
+  //   width: 120px;
+  //   height: 90px;
+  //   position: absolute;
+  //   top: 80%;
+  //   left: 80%;
+
+  //   .dot {
+  //     background: #fff;
+  //     border-radius: 50%;
+  //     width: 30px;
+  //     height: 30px;
+  //     position: absolute;
+  //     bottom: 30px;
+  //     left: 27px;
+  //     transform-origin: center bottom;
+  //     animation: dot 0.6s ease-in-out infinite;
+  //   }
+
+  //   @keyframes dot {
+  //     0% {
+  //       transform: scale(1, 0.7);
+  //     }
+  //     20% {
+  //       transform: scale(0.7, 1.2);
+  //     }
+  //     40% {
+  //       transform: scale(1, 1);
+  //     }
+  //     50% {
+  //       bottom: 100px;
+  //     }
+  //     46% {
+  //       transform: scale(1, 1);
+  //     }
+  //     80% {
+  //       transform: scale(0.7, 1.2);
+  //     }
+  //     90% {
+  //       transform: scale(0.7, 1.2);
+  //     }
+  //     100% {
+  //       transform: scale(1, 0.7);
+  //     }
+  //   }
+
+  //   .step {
+  //     position: absolute;
+  //     width: 30px;
+  //     height: 30px;
+  //     border-top: 2px solid #fff;
+  //     top: 0;
+  //     right: 0;
+  //   }
+
+  //   @keyframes anim {
+  //     0% {
+  //       opacity: 0;
+  //       top: 0;
+  //       right: 0;
+  //     }
+  //     50% {
+  //       opacity: 1;
+  //     }
+  //     100% {
+  //       top: 90px;
+  //       right: 90px;
+  //       opacity: 0;
+  //     }
+  //   }
+
+  //   .s1 {
+  //     animation: anim 1.8s linear infinite;
+  //   }
+
+  //   .s2 {
+  //     animation: anim 1.8s linear infinite -0.6s;
+  //   }
+
+  //   .s3 {
+  //     animation: anim 1.8s linear infinite -1.2s;
+  //   }
+  // }
 }
