@@ -1,7 +1,6 @@
 .logo-container {
   display: flex;
   justify-content: space-between;
-  color: #d70707;
   padding: 30px;
 
   //로고 영역
@@ -9,6 +8,7 @@
     font-weight: 700;
     font-size: 2.5rem;
     align-self: center;
+    color: #ffb000;
   }
 
   //날짜 영역
