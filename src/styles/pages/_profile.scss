@@ -1,128 +1,60 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
-@import url(https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Lato&display=swap);
 
 .profile-container {
   width: 100%;
   height: 100%;
-  padding-top: 70px;
-  background: #fffade;
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 2fr 1fr;
+  padding-top: 45px;
+  display: flex;
 
-  .contents {
+  .left-contents {
+    background: #ffb000;
+    flex: 1;
+
+    .profile-img {
+      width: 75%;
+      height: auto;
+    }
+  }
+
+  .right-contents {
+    background: #efe9dd;
+    flex: 1;
+    height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    width: 700px;
-    font-size: 11pt;
-    text-align: justify;
+    grid-template-columns: 1fr 5fr;
 
-    .contents-abs {
-      position: relative;
-
-      p {
-        font-size: 100pt;
-        font-weight: 700;
-        color: #ffffff;
-      }
-
-      span {
-        position: absolute;
-        padding: 10px;
-      }
-    }
-  }
-
-  .main-title {
-    font-size: 30pt;
-    text-align: left;
-    justify-self: right;
-
-    .underline {
-      border-bottom: #d70707 solid 1px;
-    }
-  }
-
-  body {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600;
-    font-size: 40px;
-  }
-
-  .sub-title {
-    .text {
-      position: absolute;
-      text-align: left;
-      margin-left: 50px;
+    .main-title {
+      text-align: center;
       font-size: 30pt;
-      font-family: "Nanum Pen Script", cursive;
+      font-family: "Lat", cursive;
+      place-self: center;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      color: #ffb000;
     }
 
-    p {
-      display: inline-block;
-      vertical-align: top;
-      margin: 0;
+    .contents-text {
+      width: 600px;
+      font-size: 10pt;
+      text-align: justify;
+      place-self: center;
+      justify-self: left;
     }
 
-    .word {
-      position: absolute;
-      width: 220px;
-      opacity: 0;
-    }
+    .stats {
+      display: flex;
+      text-align: left;
+      padding-top: 50px;
 
-    .letter {
-      display: inline-block;
-      position: relative;
-      transform: translateZ(25px);
-      transform-origin: 50% 50% 25px;
-    }
+      .box {
+        font-size: 18px;
+        margin-right: 50px;
 
-    .letter.out {
-      transform: rotateX(90deg);
-      transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    }
-
-    .letter.behind {
-      transform: rotateX(-90deg);
-    }
-
-    .letter.in {
-      transform: rotateX(0deg);
-      transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    }
-
-    .wisteria {
-      color: #8e44ad;
-    }
-
-    .belize {
-      color: #2980b9;
-    }
-
-    .pomegranate {
-      color: #c0392b;
-    }
-
-    .green {
-      color: #16a085;
-    }
-
-    .midnight {
-      color: #2c3e50;
-    }
-  }
-
-  .stats {
-    text-align: left;
-
-    .box {
-      margin: 10px;
-      font-size: 18px;
-
-      &:hover {
-        color: #7c25ff;
-        cursor: pointer;
+        &:hover {
+          color: #d70707;
+          cursor: pointer;
+        }
       }
     }
   }
