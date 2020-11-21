@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
-@import url(https://fonts.googleapis.com/css2?family=Lato&display=swap);
-
+@import url(https://fonts.googleapis.com/css2?family=Tinos:ital@1&display=swap);
 .profile-container {
   width: 100%;
   height: 100%;
@@ -10,15 +9,46 @@
   .left-contents {
     background: #ffb000;
     flex: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+
+    .profile-contents {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      grid-template-rows: 1fr;
+
+      .stats {
+        text-align: left;
+        margin: 0 0 80px 10px;
+        align-self: flex-end;
+
+        .box {
+          font-size: 20px;
+
+          &:hover {
+            color: #d70707;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .profile-text {
+      color: #d70707;
+      place-self: end;
+      margin: 0 240px 5px 0;
+      font-family: 'Tinos', serif;
+    }
 
     .profile-img {
-      width: 75%;
+      width: 100%;
       height: auto;
     }
   }
 
   .right-contents {
-    background: #efe9dd;
+    background: whitesmoke;
     flex: 1;
     height: 100%;
     display: grid;
@@ -27,7 +57,7 @@
     .main-title {
       text-align: center;
       font-size: 30pt;
-      font-family: "Lat", cursive;
+      font-family: 'Tinos', serif;
       place-self: center;
       writing-mode: vertical-rl;
       transform: rotate(180deg);
@@ -40,22 +70,6 @@
       text-align: justify;
       place-self: center;
       justify-self: left;
-    }
-
-    .stats {
-      display: flex;
-      text-align: left;
-      padding-top: 50px;
-
-      .box {
-        font-size: 18px;
-        margin-right: 50px;
-
-        &:hover {
-          color: #d70707;
-          cursor: pointer;
-        }
-      }
     }
   }
 }

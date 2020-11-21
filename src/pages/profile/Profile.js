@@ -6,10 +6,25 @@ class Profile extends Component {
     return (
       <div className="profile-container">
         <div className="left-contents">
-          <img className="profile-img" src={profileImg} />
+          <div className="profile-text">MEDIA ART / WEBDESIGN</div>
+          <div className="profile-contents">
+            <img className="profile-img" src={profileImg} />
+            <div className="stats">
+              <div>
+                <i className="icon-mail box"> mail</i>
+              </div>
+              <div>
+                <i className="icon-instagram box"> sns</i>
+              </div>
+              <div>
+                <i className="icon-github box"> git</i>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="right-contents">
           <div className="main-title">Yusunhee_Portfolio.</div>
+
           <div className="contents-text">
             <span>
               연구하고 노력하고 끊임없는 의문을 던지는 디자이너, 문제 해결을
@@ -36,17 +51,6 @@ class Profile extends Component {
               주말에는 웹서핑을 즐길 줄 알며 인터넷과 갖가지 컴퓨터 활용능력을
               가지고 있고 때로는 서점에서 책 서핑을 하고 정보를 얻습니다.
             </span>
-            <div className="stats">
-              <div>
-                <i className="icon-mail box"> mail</i>
-              </div>
-              <div>
-                <i className="icon-instagram box"> instagram</i>
-              </div>
-              <div>
-                <i className="icon-github box"> github</i>
-              </div>
-            </div>
           </div>
         </div>
       </div>
