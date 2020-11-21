@@ -8,6 +8,7 @@
 
   .left-contents {
     background: #ffb000;
+    box-shadow: inset -8px 6px 50px 0px darkorange;
     flex: 1;
     display: grid;
     grid-template-columns: 1fr;
@@ -20,7 +21,7 @@
 
       .stats {
         text-align: left;
-        margin: 0 0 80px 10px;
+        margin: 0 0 75px 10px;
         align-self: flex-end;
 
         .box {
@@ -38,7 +39,7 @@
       color: #d70707;
       place-self: end;
       margin: 0 240px 5px 0;
-      font-family: 'Tinos', serif;
+      font-family: "Tinos", serif;
     }
 
     .profile-img {
@@ -49,6 +50,7 @@
 
   .right-contents {
     background: whitesmoke;
+    box-shadow: inset 8px 6px 50px 0px darkgrey;
     flex: 1;
     height: 100%;
     display: grid;
@@ -57,7 +59,7 @@
     .main-title {
       text-align: center;
       font-size: 30pt;
-      font-family: 'Tinos', serif;
+      font-family: "Tinos", serif;
       place-self: center;
       writing-mode: vertical-rl;
       transform: rotate(180deg);
@@ -65,11 +67,20 @@
     }
 
     .contents-text {
-      width: 600px;
-      font-size: 10pt;
+      font-size: 10.5pt;
       text-align: justify;
       place-self: center;
       justify-self: left;
+      display: flex;
+
+      .text-a {
+        width: 100%;
+        margin-right: 70px;
+      }
+      .text-b {
+        width: 100%;
+        margin-right: 70px;
+      }
     }
   }
 }
