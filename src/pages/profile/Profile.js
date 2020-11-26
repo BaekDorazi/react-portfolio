@@ -103,18 +103,9 @@ class Profile extends Component {
               </div>
             </div>
           </div>
-<<<<<<< HEAD
-        </div>+
-        <div className="right-contents">
-          <div className="main-title">Yusunhee_Portfolio.</div>
-
-          <div className="contents-text">
-            <div className="text-a">
-=======
           <div className="down-contents">
             <div className="main-title">Yusunhee_Portfolio.</div>
             <div className="contents-text">
->>>>>>> 7656f7f09263cb42e6d8ae1d0d55468247fef02b
               <span>
                 연구하고 노력하고 끊임없는 의문을 던지는 디자이너, 문제 해결을
                 위해 고민할 줄 알고 그 문제를 해결할 줄 아는 능력을 키우는 것.
