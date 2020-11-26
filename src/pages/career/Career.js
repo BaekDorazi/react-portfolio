@@ -51,7 +51,7 @@ class Career extends Component {
           <div className="skill-container">
             <div className="left-chart-container">
               <div>
-                <i className="icon-adobepremiere"></i>
+                <i className="icon icon-adobephotoshop"></i>
               </div>
               <SkillProgress
                 isPageFocus={isPageFocus}
@@ -61,6 +61,9 @@ class Career extends Component {
                 skillName="Photoshop"
               />
 
+              <div>
+                <i className="icon icon-adobeillustrator"></i>
+              </div>
               <SkillProgress
                 isPageFocus={isPageFocus}
                 percentVal={30}
@@ -69,6 +72,9 @@ class Career extends Component {
                 skillName="Illustrator"
               />
 
+              <div>
+                <i className="icon-adobepremiere"></i>
+              </div>
               <SkillProgress
                 isPageFocus={isPageFocus}
                 percentVal={90}
@@ -77,7 +83,11 @@ class Career extends Component {
                 skillName="Indesign"
               />
             </div>
+
             <div className="right-chart-container">
+            <div>
+                <i className="icon-adobepremiere"></i>
+              </div>
               <SkillProgress
                 isPageFocus={isPageFocus}
                 percentVal={70}
@@ -85,7 +95,10 @@ class Career extends Component {
                 centerSkillName="AE"
                 skillName="After Effects"
               />
-
+              
+              <div>
+                <i className="icon-adobepremiere"></i>
+              </div>
               <SkillProgress
                 isPageFocus={isPageFocus}
                 percentVal={30}
@@ -93,7 +106,10 @@ class Career extends Component {
                 centerSkillName="PR"
                 skillName="Premier"
               />
-
+              
+              <div>
+                <i className="icon-adobepremiere"></i>
+              </div>
               <SkillProgress
                 isPageFocus={isPageFocus}
                 percentVal={90}

@@ -15,7 +15,7 @@
     //페이지 width사이즈가 1145사이즈 이상일때 이미지 영역
     .left-contents {
       background: #ffb000;
-      box-shadow: inset -8px 6px 50px 0px darkorange;
+      // box-shadow: inset -8px 6px 50px 0px darkorange;
       flex: 1;
       display: grid;
       grid-template-columns: 1fr;
@@ -23,7 +23,7 @@
 
       //MEDIA ART & WEBDESIGN
       .profile-text {
-        color: #d70707;
+        color: #fff;
         place-self: end;
         margin: 0 240px 5px 0;
         font-family: "Tinos", serif;
@@ -50,7 +50,7 @@
             font-size: 20px;
 
             &:hover {
-              color: #d70707;
+              color: #fff;
               cursor: pointer;
             }
           }
@@ -61,7 +61,7 @@
     //페이지 width사이즈가 1145사이즈 이상일때 글 영역
     .right-contents {
       background: whitesmoke;
-      box-shadow: inset 8px 6px 50px 0px darkgrey;
+      // box-shadow: inset 8px 6px 50px 0px darkgrey;
       flex: 1;
       height: 100%;
       display: grid;
@@ -117,7 +117,7 @@
 
         //MEDIA ART & WEBDESIGN
         .profile-text {
-          color: #d70707;
+          color: #fff;
           font-family: "Tinos", serif;
           text-align: end;
           margin: 10px 20px;
@@ -140,7 +140,7 @@
             font-size: 20px;
 
             &:hover {
-              color: #d70707;
+              color: #fff;
               cursor: pointer;
             }
           }
