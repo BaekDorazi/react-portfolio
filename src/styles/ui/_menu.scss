@@ -29,4 +29,10 @@
       color: brown;
     }
   }
+
+  @media (max-width: 900px) {
+    .menu {
+      flex-direction: column;
+    }
+  }
 }
