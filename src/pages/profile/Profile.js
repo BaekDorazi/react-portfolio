@@ -21,7 +21,7 @@ class Profile extends Component {
               </div>
             </div>
           </div>
-        </div>
+        </div>+
         <div className="right-contents">
           <div className="main-title">Yusunhee_Portfolio.</div>
 

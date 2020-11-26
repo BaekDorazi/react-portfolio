@@ -17,39 +17,42 @@ class Career extends Component {
         <div className="center-rect"></div>
         <div className="license-skill-container">
           <div className="license-container">
-            <Timeline lineColor={"#ffffff"}>
-              <TimelineItem dateText="2014.01">
-                <h5>자격증명</h5>
-                <p>발급기관</p>
-              </TimelineItem>
-              <TimelineItem dateStyle={{ display: "none" }}>
-                <h5>자격증명</h5>
-                <p>발급기관</p>
-              </TimelineItem>
-              <TimelineItem dateText="2020.10">
-                <h5>자격증명</h5>
-                <p>발급기관</p>
-              </TimelineItem>
-              <TimelineItem dateStyle={{ display: "none" }}>
-                <h5>자격증명</h5>
-                <p>발급기관</p>
-              </TimelineItem>
-              <TimelineItem dateText="2020.10">
-                <h5>유선희</h5>
-                <p>백도형</p>
-              </TimelineItem>
-              <TimelineItem dateText="2020.11">
-                <h5>자격증명</h5>
-                <p>발급기관</p>
-              </TimelineItem>
-              <TimelineItem dateStyle={{ display: "none" }}>
-                <h5>자격증명</h5>
-                <p>발급기관</p>
-              </TimelineItem>
-            </Timeline>
+            <div className="circle" />
+            <div className="license-title">License</div>
+            <div className="license-contents">
+              웹디자인기능사 -
+              <sapn className="license-date"> 한국산업인력공단(2014.04)</sapn>
+            </div>
+            <div className="license-contents">
+              SOKI 국제 디자인&일러스트레이션 입상 -
+              <sapn className="license-date"> 한국일러스트학회(2014.01)</sapn>
+            </div>
+            <div className="license-contents">
+              GTQ 포토샵 -
+              <sapn className="license-date"> 한국생산성본부 KPC(2009.10)</sapn>
+            </div>
+            <div className="license-contents">
+              정보기기운용기능사 -
+              <sapn className="license-date"> 한국산업인력공단(2009.07)</sapn>
+            </div>
+            <div className="license-contents">
+              정보기술자격 ITQ 한글파워포인트 -
+              <sapn className="license-date"> 한국생산성본부 KPC(2008.06)</sapn>
+            </div>
+            <div className="license-contents">
+              워드프로세서 -
+              <sapn className="license-date"> 대한상공회의소(2007.08)</sapn>
+            </div>
+            <div className="license-contents">
+              정보기술자격 ITQ 아래한글 -
+              <sapn className="license-date"> 한국생산성본부 KPC(2007.07)</sapn>
+            </div>
           </div>
           <div className="skill-container">
             <div className="left-chart-container">
+              <div>
+                <i className="icon-adobepremiere"></i>
+              </div>
               <SkillProgress
                 isPageFocus={isPageFocus}
                 percentVal={70}
@@ -101,7 +104,6 @@ class Career extends Component {
             </div>
           </div>
         </div>
-
         {/* <div className="animation-container">
           <div className="dot"></div>
           <div className="step s1"></div>
