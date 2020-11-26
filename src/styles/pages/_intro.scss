@@ -12,6 +12,7 @@
     transform: translateX(-50%) translateY(-50%);
   }
 
+  //intro 글씨 1줄 일때
   .intro-content:before,
   .intro-content:after {
     content: "";
@@ -21,18 +22,34 @@
     width: 100%;
     top: 50%;
     display: block;
-    border: 15px solid #FFB000;
+    border: 15px solid #ffb000;
     transform: translateX(-50%) translateY(-50%) rotate(0deg);
     animation: 10s infinite alternate ease-in-out rotate-rect;
   }
 
+  //intro 글씨 2줄 일때
+  @media (max-width: 1901px) {
+    .intro-content:before,
+    .intro-content:after {
+      padding: 1.3em 0.4em;
+    }
+  }
+
+  //intro 글씨 3줄 일때
+  @media (max-width: 985px) {
+    .intro-content:before,
+    .intro-content:after {
+      padding: 2em 0.4em;
+    }
+  }
+
   .intro-content:before {
-    border-color: #FFB000 #FFB000 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    border-color: #ffb000 #ffb000 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
     z-index: -1;
   }
 
   .intro-content:after {
-    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #FFB000 #FFB000;
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #ffb000 #ffb000;
   }
 
   @keyframes rotate-rect {
