@@ -22,8 +22,8 @@ class Menu extends Component {
                 <div
                   className={
                     showPageName === "Intro"
-                      ? "menu-btn selected-menu"
-                      : "menu-btn"
+                      ? "mouse-over selected-menu"
+                      : "mouse-over"
                   }
                   onClick={() => fullpageApi.moveTo(1, 0)}
                 >
@@ -32,8 +32,8 @@ class Menu extends Component {
                 <div
                   className={
                     showPageName === "Profile"
-                      ? "menu-btn selected-menu"
-                      : "menu-btn"
+                      ? "mouse-over selected-menu"
+                      : "mouse-over"
                   }
                   onClick={() => fullpageApi.moveTo(2, 0)}
                 >
@@ -42,8 +42,8 @@ class Menu extends Component {
                 <div
                   className={
                     showPageName === "Career"
-                      ? "menu-btn selected-menu"
-                      : "menu-btn"
+                      ? "mouse-over selected-menu"
+                      : "mouse-over"
                   }
                   onClick={() => fullpageApi.moveTo(3, 0)}
                 >
@@ -52,8 +52,8 @@ class Menu extends Component {
                 <div
                   className={
                     showPageName === "Portfolio"
-                      ? "menu-btn selected-menu"
-                      : "menu-btn"
+                      ? "mouse-over selected-menu"
+                      : "mouse-over"
                   }
                   onClick={() => fullpageApi.moveTo(4, 0)}
                 >
@@ -62,8 +62,8 @@ class Menu extends Component {
                 <div
                   className={
                     showPageName === "Contact"
-                      ? "menu-btn selected-menu"
-                      : "menu-btn"
+                      ? "mouse-over selected-menu"
+                      : "mouse-over"
                   }
                   onClick={() => fullpageApi.moveTo(5, 0)}
                 >
