@@ -35,8 +35,19 @@
       height: 100%;
 
       .test-rect {
-        background: chartreuse;
         margin: 20px;
+      }
+
+      .background-red {
+        background: red;
+      }
+
+      .background-blue {
+        background: blue;
+      }
+
+      .background-yellow {
+        background: yellow;
       }
     }
   }
