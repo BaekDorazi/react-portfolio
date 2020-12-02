@@ -49,73 +49,63 @@ class Career extends Component {
             </div>
           </div>
           <div className="skill-container">
-            <div className="left-chart-container">
-              <div>
-                <i className="icon icon-adobephotoshop"></i>
-              </div>
+            <div className="chart">
+              <i className="icon-adobephotoshop"></i>
               <SkillProgress
                 isPageFocus={isPageFocus}
-                percentVal={70}
+                percentVal={80}
                 color={"#123456"}
-                centerSkillName="PS"
-                skillName="Photoshop"
-              />
-
-              <div>
-                <i className="icon icon-adobeillustrator"></i>
-              </div>
-              <SkillProgress
-                isPageFocus={isPageFocus}
-                percentVal={30}
-                color={"#ab5482"}
-                centerSkillName="AI"
-                skillName="Illustrator"
-              />
-
-              <div>
-                <i className="icon-adobepremiere"></i>
-              </div>
-              <SkillProgress
-                isPageFocus={isPageFocus}
-                percentVal={90}
-                color={"#855124"}
-                centerSkillName="ID"
-                skillName="Indesign"
+                skillName="Photoshop - 합성, 사진 편집 등의 2D 그래픽 작업을 비롯한 다양한 웹 시안
+                디자인 작업"
               />
             </div>
 
-            <div className="right-chart-container">
-            <div>
-                <i className="icon-adobepremiere"></i>
-              </div>
+            <div className="chart box">
+              <i className="icon-adobeillustrator"></i>
               <SkillProgress
                 isPageFocus={isPageFocus}
-                percentVal={70}
-                color={"#123456"}
-                centerSkillName="AE"
-                skillName="After Effects"
-              />
-              
-              <div>
-                <i className="icon-adobepremiere"></i>
-              </div>
-              <SkillProgress
-                isPageFocus={isPageFocus}
-                percentVal={30}
+                percentVal={50}
                 color={"#ab5482"}
-                centerSkillName="PR"
-                skillName="Premier"
+                skillName="Illustrator - 디자인 목업, 배너, 플래카드 등과 아이콘, 로고, 심볼 등의 그래픽 디자인 작업"
               />
-              
-              <div>
-                <i className="icon-adobepremiere"></i>
-              </div>
+            </div>
+
+            <div className="chart">
+              <i className="icon-adobeindesign"></i>
               <SkillProgress
                 isPageFocus={isPageFocus}
-                percentVal={90}
+                percentVal={80}
                 color={"#855124"}
-                centerSkillName="H/C"
-                skillName="HTML+CSS"
+                skillName="Indesign - 리플렛, 브로슈어, 카다로그, 책자 등의 인쇄물 편집 디자인 작업"
+              />
+            </div>
+            <div className="chart">
+              <i className="icon-adobeaftereffects"></i>
+              <SkillProgress
+                isPageFocus={isPageFocus}
+                percentVal={60}
+                color={"#123456"}
+                skillName="After Effects - 영상 보정, 자막, 모션그래픽 등의 편집과 음악, 효과음 합성 작업"
+              />
+            </div>
+
+            <div className="chart">
+              <i className="icon-adobepremiere"></i>
+              <SkillProgress
+                isPageFocus={isPageFocus}
+                percentVal={80}
+                color={"#ab5482"}
+                skillName="Premier - 영상 자르고 붙이는 등의 컷 편집과 음악, 효과음 합성 작업"
+              />
+            </div>
+
+            <div className="chart">
+              <i className="icon-embed"></i>
+              <SkillProgress
+                isPageFocus={isPageFocus}
+                percentVal={60}
+                color={"#855124"}
+                skillName="HTML+CSS - HTML로 구조화하고 CSS로 디자인을 적용하는 웹 디자인 및 퍼블리싱 작업"
               />
             </div>
           </div>

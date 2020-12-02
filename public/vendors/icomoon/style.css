@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?gkbc48');
-  src:  url('fonts/icomoon.eot?gkbc48#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?gkbc48') format('truetype'),
-    url('fonts/icomoon.woff?gkbc48') format('woff'),
-    url('fonts/icomoon.svg?gkbc48#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?61dxxe');
+  src:  url('fonts/icomoon.eot?61dxxe#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?61dxxe') format('truetype'),
+    url('fonts/icomoon.woff?61dxxe') format('woff'),
+    url('fonts/icomoon.svg?61dxxe#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,8 +25,31 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-mail:before {
+.icon-adobepremiere:before {
   content: "\e900";
+  color: #ea77ff;
+}
+.icon-adobephotoshop:before {
+  content: "\e901";
+  color: #00c8ff;
+}
+.icon-adobeindesign:before {
+  content: "\e902";
+  color: #fd3f93;
+}
+.icon-adobeillustrator:before {
+  content: "\e903";
+  color: #ff7c00;
+}
+.icon-adobeaftereffects:before {
+  content: "\e904";
+  color: #d291ff;
+}
+.icon-drawer:before {
+  content: "\e95d";
+}
+.icon-embed:before {
+  content: "\ea80";
 }
 .icon-instagram:before {
   content: "\ea92";

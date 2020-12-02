@@ -51,7 +51,7 @@ class SkillProgress extends Component {
     const { color, skillName, centerSkillName } = this.props;
 
     const containerStyle = {
-      width: "120px",
+      width: "400px",
     };
 
     return (

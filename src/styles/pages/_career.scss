@@ -48,18 +48,26 @@
     //스킬 영역
     .skill-container {
       flex: 1;
-      height: 100%;
       margin: 0 80px;
-      background: rgb(245, 245, 245);
-      display: flex;
       justify-content: space-around;
 
-      .left-chart-container {
-        align-self: center;
+      .box {
+         
       }
 
-      .right-chart-container {
-        align-self: center;
+      .text {
+        font-size: 13px;
+        text-align: left;
+      }
+
+      .chart {
+        display: flex;
+
+        i {
+          float: left;
+          font-size: 60px;
+          margin: 20px;
+        }
       }
     }
   }

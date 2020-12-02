@@ -1,5 +1,5 @@
 .skill-progress-container {
-  margin-bottom: 50px;
+  margin-top: 10px;
 
   .graph-container {
     position: relative;
@@ -7,12 +7,12 @@
     .graph-center-text {
       position: absolute;
       width: 100%;
-      top: 30%;
       font-size: 2rem;
     }
   }
 
   .graph-full-text {
     font-size: 1rem;
+    text-align: left;
   }
 }

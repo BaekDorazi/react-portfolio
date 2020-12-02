@@ -13,7 +13,7 @@ class Profile extends Component {
               <img className="profile-img" src={profileImg} />
               <div className="stats">
                 <div>
-                  <i className="icon-mail box"> mail</i>
+                  <i className="icon-drawer box"> mail</i>
                 </div>
                 <div>
                   <i className="icon-instagram box"> sns</i>
