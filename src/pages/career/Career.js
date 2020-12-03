@@ -126,7 +126,8 @@ class Career extends Component {
       <div className="career-container">
         <div className="license-skill-container">
           <div className="license-container">
-            <div className="circle" />
+            <div className="circle_top" />
+            <div className="circle_bottom" />
             <div className="license-title">License</div>
             {showLicense}
           </div>
