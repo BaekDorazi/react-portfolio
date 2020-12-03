@@ -21,20 +21,6 @@
       background: rgb(245, 245, 245);
       text-align: left;
 
-      .license-title {
-        font-size: 50pt;
-        font-family: "Tinos", serif;
-        color: #000000;
-        text-align: left;
-        text-align: center;
-      }
-
-      @keyframes wavy-slide {
-        to {
-          margin-left: -51%;
-        }
-      }
-
       .circle {
         width: 50px;
         height: 50px;
@@ -43,17 +29,12 @@
         text-align: center;
       }
 
-      .desc {
-        transition: background-size 0.4s ease;
-        background: linear-gradient(to bottom, transparent 62%, #ffb000 0)
-          center center/0% 75% no-repeat;
-        padding: 0 6px 2px 6px;
-        cursor: pointer;
-        letter-spacing: 0.08rem;
-
-        &:hover {
-          background-size: 100% 100%;
-        }
+      .license-title {
+        font-size: 50pt;
+        font-family: "Tinos", serif;
+        color: #000000;
+        text-align: left;
+        text-align: center;
       }
 
       .license-contents {
@@ -61,8 +42,21 @@
         font-size: 12pt;
         text-align: center;
 
-        .license-date {
-          font-size: 9pt;
+        .desc {
+          transition: background-size 0.4s ease;
+          background: linear-gradient(to bottom, transparent 62%, #ffb000 0)
+            center center/0% 75% no-repeat;
+          padding: 0 6px 2px 6px;
+          cursor: pointer;
+          letter-spacing: 0.08rem;
+
+          &:hover {
+            background-size: 100% 100%;
+          }
+
+          .license-date {
+            font-size: 9pt;
+          }
         }
       }
     }
