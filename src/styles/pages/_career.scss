@@ -26,6 +26,7 @@
         font-family: "Tinos", serif;
         color: #000000;
         text-align: left;
+        text-align: center;
       }
 
       @keyframes wavy-slide {
@@ -39,11 +40,12 @@
         height: 50px;
         background: #ffb000;
         border-radius: 100px;
+        text-align: center;
       }
 
       .desc {
         transition: background-size 0.4s ease;
-        background: linear-gradient(to bottom, transparent 62%, #fff87e 0)
+        background: linear-gradient(to bottom, transparent 62%, #ffb000 0)
           center center/0% 75% no-repeat;
         padding: 0 6px 2px 6px;
         cursor: pointer;
@@ -57,6 +59,7 @@
       .license-contents {
         margin: 20px 0;
         font-size: 12pt;
+        text-align: center;
 
         .license-date {
           font-size: 9pt;
