@@ -132,12 +132,6 @@ class Career extends Component {
           </div>
           <div className="skill-container">{showSkill}</div>
         </div>
-        {/* <div className="animation-container">
-          <div className="dot"></div>
-          <div className="step s1"></div>
-          <div className="step s2"></div>
-          <div className="step s3"></div>
-        </div> */}
       </div>
     );
   }
