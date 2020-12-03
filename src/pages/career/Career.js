@@ -15,35 +15,36 @@ class Career extends Component {
     return (
       <div className="career-container">
         <div className="center-rect"></div>
+
         <div className="license-skill-container">
           <div className="license-container">
             <div className="circle" />
             <div className="license-title">License</div>
-            <div className="license-contents">
+            <div className="license-contents desc">
               웹디자인기능사 -
               <sapn className="license-date"> 한국산업인력공단(2014.04)</sapn>
             </div>
-            <div className="license-contents">
+            <div className="license-contents desc">
               SOKI 국제 디자인&일러스트레이션 입상 -
               <sapn className="license-date"> 한국일러스트학회(2014.01)</sapn>
             </div>
-            <div className="license-contents">
+            <div className="license-contents desc">
               GTQ 포토샵 -
               <sapn className="license-date"> 한국생산성본부 KPC(2009.10)</sapn>
             </div>
-            <div className="license-contents">
+            <div className="license-contents desc">
               정보기기운용기능사 -
               <sapn className="license-date"> 한국산업인력공단(2009.07)</sapn>
             </div>
-            <div className="license-contents">
+            <div className="license-contents desc">
               정보기술자격 ITQ 한글파워포인트 -
               <sapn className="license-date"> 한국생산성본부 KPC(2008.06)</sapn>
             </div>
-            <div className="license-contents">
+            <div className="license-contents desc">
               워드프로세서 -
               <sapn className="license-date"> 대한상공회의소(2007.08)</sapn>
             </div>
-            <div className="license-contents">
+            <div className="license-contents desc">
               정보기술자격 ITQ 아래한글 -
               <sapn className="license-date"> 한국생산성본부 KPC(2007.07)</sapn>
             </div>

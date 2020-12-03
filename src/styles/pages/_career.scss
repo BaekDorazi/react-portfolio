@@ -22,10 +22,16 @@
       text-align: left;
 
       .license-title {
-        font-size: 30pt;
+        font-size: 50pt;
         font-family: "Tinos", serif;
         color: #000000;
         text-align: left;
+      }
+
+      @keyframes wavy-slide {
+        to {
+          margin-left: -51%;
+        }
       }
 
       .circle {
@@ -33,6 +39,19 @@
         height: 50px;
         background: #ffb000;
         border-radius: 100px;
+      }
+
+      .desc {
+        transition: background-size 0.4s ease;
+        background: linear-gradient(to bottom, transparent 62%, #fff87e 0)
+          center center/0% 75% no-repeat;
+        padding: 0 6px 2px 6px;
+        cursor: pointer;
+        letter-spacing: 0.08rem;
+
+        &:hover {
+          background-size: 100% 100%;
+        }
       }
 
       .license-contents {
@@ -50,10 +69,6 @@
       flex: 1;
       margin: 0 80px;
       justify-content: space-around;
-
-      .box {
-         
-      }
 
       .text {
         font-size: 13px;
