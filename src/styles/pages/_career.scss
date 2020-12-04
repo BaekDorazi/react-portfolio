@@ -44,13 +44,13 @@
         position: absolute;
         top: 550px;
         left: 30px;
-        width: 300px;
-        height: 300px;
+        width: 370px;
+        height: 370px;
         border-radius: 50%;
         background: #ffb000;
 
         animation: move2 3s ease infinite;
-   
+
         @keyframes move2 {
           50% {
             top: 530px;
@@ -65,6 +65,8 @@
         color: #000000;
         text-align: center;
         margin: 50px 0 50px 0;
+        text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+          0px -5px 35px rgba(255, 255, 255, 0.3);
       }
 
       .license-contents {
@@ -74,8 +76,8 @@
 
         .desc {
           transition: background-size 0.4s ease;
-          background: linear-gradient(to bottom, transparent 62%, #fff 0)
-            center center/0% 75% no-repeat;
+          background: linear-gradient(to bottom, transparent 62%, #fff 0) center
+            center/0% 75% no-repeat;
           padding: 0 6px 2px 6px;
           cursor: pointer;
           letter-spacing: 0.08rem;
