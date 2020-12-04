@@ -3,8 +3,8 @@
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 8fr 2fr;
+  grid-template-columns: 8fr 2fr;
+  grid-template-rows: 1fr;
 
   //포트폴리오 내용 영역
   .portfolio-contents-container {
@@ -12,10 +12,10 @@
 
   //포트폴리오 필터 영역
   .portfolio-filter-container {
-    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
     display: grid;
-    grid-template-columns: 2fr 8fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 8fr;
 
     //포트폴리오 필터
     .portfolio-filter {
@@ -30,8 +30,8 @@
     .portfolio-list {
       display: grid;
       align-self: center;
-      grid-template-columns: repeat(6, 1fr);
-      grid-template-rows: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 1fr);
       height: 100%;
 
       .test-rect {
