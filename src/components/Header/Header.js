@@ -20,12 +20,14 @@ class Header extends Component {
 
   render() {
     const { showPageName } = this.props;
-    
+
     return (
       <div className="abs header">
         {showPageName === "Intro" && <Logo />}
         <Menu showPageName={showPageName} />
-        <SideNav showPageName={showPageName} />
+        {showPageName !== "Portfolio" && (
+          <SideNav showPageName={showPageName} />
+        )}
       </div>
     );
   }
