@@ -11,7 +11,7 @@
   .license-skill-container {
     display: flex;
     width: 100%;
-    height: 70%;
+    height: 80%;
     position: absolute;
 
     .license-container {
@@ -60,11 +60,11 @@
       }
 
       .license-title {
-        font-size: 50pt;
+        font-size: 4rem;
         font-family: "Tinos", serif;
         color: #000000;
         text-align: center;
-        margin: 50px 0 50px 0;
+        margin: 20px 0 20px 0;
         text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
           0px -5px 35px rgba(255, 255, 255, 0.3);
       }
@@ -106,6 +106,7 @@
 
       .chart {
         display: flex;
+        margin-bottom: 15px;
 
         i {
           float: left;
@@ -114,5 +115,121 @@
         }
       }
     }
+  }
+}
+
+.container {
+  display: flex;
+  // box-sizing: border-box;
+  width: 100%;
+}
+
+.timeline {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+
+.timeline ul li {
+  padding: 5px 15px;
+  background: darkgray;
+  color: white;
+  border-radius: 10px;
+}
+
+//제일 마지막 li의 마진을 0으로
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+
+//년도
+.timeline-content h1 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+//내용
+.timeline-content div span {
+  font-size: 13px;
+  line-height: 25px;
+  font-weight: 300;
+}
+
+//밑줄 그어지는 css
+.desc {
+  transition: background-size 0.4s ease;
+  background: linear-gradient(to bottom, transparent 62%, #fff 0) center
+    center/0% 75% no-repeat;
+  padding: 0 6px 2px 6px;
+  cursor: pointer;
+  letter-spacing: 0.08rem;
+
+  &:hover {
+    background-size: 100% 100%;
+  }
+}
+
+//태블릿 사이즈일때
+@media only screen and (min-width: 768px) {
+  //막대기
+  .timeline::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background: gray;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .timeline ul li {
+    width: 50%;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  //왼쪽
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-50px);
+    text-align: right;
+  }
+
+  //오른쪽
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(10px);
+  }
+
+  //동그라미
+  .timeline ul li::after {
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background: gray;
+    border-radius: 50%;
+    top: 0;
+  }
+
+  //왼쪽 동그라미 위치 조정
+  .timeline ul li:nth-child(odd)::after {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+
+  //오른쪽 동그라미 위치 조정
+  .timeline ul li:nth-child(even)::after {
+    transform: translate(-50%, -50%);
+    left: -30px;
   }
 }

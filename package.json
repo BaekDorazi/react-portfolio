@@ -22,8 +22,7 @@
     "react-typing-animation": "^1.6.2",
     "reactstrap": "^8.6.0",
     "redux": "^4.0.5",
-    "redux-actions": "^2.6.5",
-    "vertical-timeline-component-for-react": "^1.0.7"
+    "redux-actions": "^2.6.5"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import SkillProgress from "components/SkillProgress/SkillProgress";
-import { Timeline, TimelineItem } from "vertical-timeline-component-for-react";
 
 class Career extends Component {
   constructor(props) {
@@ -81,7 +80,7 @@ class Career extends Component {
             "Premier - 영상 자르고 붙이는 등의 컷 편집과 음악, 효과음 합성 작업",
         },
         {
-          icon: "icon-embed",
+          icon: "icon-embed2",
           percentVal: 60,
           color: "#855124",
           contents:
@@ -129,7 +128,69 @@ class Career extends Component {
             <div className="circle_top" />
             <div className="circle_bottom" />
             <div className="license-title">License</div>
-            {showLicense}
+            {/* {showLicense} */}
+            <div className="container">
+              <div className="timeline">
+                <ul>
+                  <li>
+                    <div className="timeline-content">
+                      <h1>2014</h1>
+                      <div>
+                        <span className="desc">
+                          04 웹디자인기능사(한국산업인력공단)
+                        </span>
+                      </div>
+                      <div>
+                        <span className="desc">
+                          01 SOKI 국제 디자인 &amp; 일러스트레이션
+                          입상(한국일러스트학회)
+                        </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="timeline-content">
+                      <h1>2009</h1>
+                      <div>
+                        <span className="desc">
+                          10 GTQ 포토샵(한국생산성본부 KPC)
+                        </span>
+                      </div>
+                      <div>
+                        <span className="desc">
+                          07 정보기기운용기능사(한국산업인력공단)
+                        </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="timeline-content">
+                      <h1>2008</h1>
+                      <div>
+                        <span className="desc">
+                          06 정보기술자격 ITQ 한글파워포인트(한국생산성본부 KPC)
+                        </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="timeline-content">
+                      <h1>2007</h1>
+                      <div>
+                        <span className="desc">
+                          08 워드프로세서(대한상공회의소)
+                        </span>
+                      </div>
+                      <div>
+                        <span className="desc">
+                          07 정보기술자격 ITQ 아래한글(한국생산성본부 KPC)
+                        </span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
           <div className="skill-container">{showSkill}</div>
         </div>
