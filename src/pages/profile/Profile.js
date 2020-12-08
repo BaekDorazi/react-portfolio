@@ -13,7 +13,10 @@ class Profile extends Component {
               <img className="profile-img" src={profileImg} />
               <div className="stats">
                 <div>
-                  <i className="icon-drawer box"> mail</i>
+                  <i className="icon-bubbles box"> talk</i>
+                </div>
+                <div>
+                  <i className="icon-drawer2 box"> mail</i>
                 </div>
                 <div>
                   <i className="icon-instagram box"> sns</i>
@@ -25,7 +28,7 @@ class Profile extends Component {
             </div>
           </div>
           <div className="right-contents">
-            <div className="main-title">Yusunhee_Portfolio.</div>
+            <div className="main-title">About_Me</div>
 
             <div className="contents-text">
               <div className="text-a">
