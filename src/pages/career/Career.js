@@ -14,7 +14,7 @@ class Career extends Component {
               licenseName: "웹디자인기능사",
               issuingAgency: "한국산업인력공단",
               issueDate: "2014.04",
-              isBr: false,
+              isBr: false, //길어서 br로 내려야될때 false는 br태그 x
             },
             {
               licenseName: "SOKI 국제 디자인 & 일러스트레이션 입상",
