@@ -8,39 +8,59 @@ class Career extends Component {
     this.state = {
       licenseArr: [
         {
-          licenseName: "웹디자인기능사",
-          issuingAgency: "한국산업인력공단",
-          issueDate: "2014.04",
+          acquisitionYear: "2014",
+          acquireLicense: [
+            {
+              licenseName: "웹디자인기능사",
+              issuingAgency: "한국산업인력공단",
+              issueDate: "2014.04",
+            },
+            {
+              licenseName: "SOKI 국제 디자인 & 일러스트레이션 입상",
+              issuingAgency: "한국일러스트학회",
+              issueDate: "2014.01",
+            },
+          ],
         },
         {
-          licenseName: "SOKI 국제 디자인 & 일러스트레이션 입상",
-          issuingAgency: "한국일러스트학회",
-          issueDate: "2014.01",
+          acquisitionYear: "2009",
+          acquireLicense: [
+            {
+              licenseName: "GTQ 포토샵",
+              issuingAgency: "한국생산성본부 KPC",
+              issueDate: "2009.10",
+            },
+            {
+              licenseName: "정보기기운용기능사",
+              issuingAgency: "한국산업인력공단",
+              issueDate: "2009.07",
+            },
+          ],
         },
         {
-          licenseName: "GTQ 포토샵",
-          issuingAgency: "한국생산성본부 KPC",
-          issueDate: "2009.10",
+          acquisitionYear: "2008",
+          acquireLicense: [
+            {
+              licenseName: "정보기술자격 ITQ 한글파워포인트",
+              issuingAgency: "한국생산성본부 KPC",
+              issueDate: "2008.06",
+            },
+          ],
         },
         {
-          licenseName: "정보기기운용기능사",
-          issuingAgency: "한국산업인력공단",
-          issueDate: "2009.07",
-        },
-        {
-          licenseName: "정보기술자격 ITQ 한글파워포인트",
-          issuingAgency: "한국생산성본부 KPC",
-          issueDate: "2008.06",
-        },
-        {
-          licenseName: "워드프로세서",
-          issuingAgency: "대한상공회의소",
-          issueDate: "2007.08",
-        },
-        {
-          licenseName: "정보기술자격 ITQ 아래한글",
-          issuingAgency: "한국생산성본부 KPC",
-          issueDate: "2007.07",
+          acquisitionYear: "2007",
+          acquireLicense: [
+            {
+              licenseName: "워드프로세서",
+              issuingAgency: "대한상공회의소",
+              issueDate: "2007.08",
+            },
+            {
+              licenseName: "정보기술자격 ITQ 아래한글",
+              issuingAgency: "한국생산성본부 KPC",
+              issueDate: "2007.07",
+            },
+          ],
         },
       ], //자격증 정보 json
       skillArr: [
@@ -95,15 +115,21 @@ class Career extends Component {
     const { isPageFocus } = this.props;
 
     let showLicense = licenseArr.map((license) => {
+      let acquireLicense = license.acquireLicense.map((elem) => {
+        return (
+          <div>
+            · <span className="desc">{elem.licenseName}</span>({elem.issueDate}.{" "}
+            {elem.issuingAgency})
+          </div>
+        );
+      });
       return (
-        <div className="license-contents">
-          <span className="desc">
-            {license.licenseName} -
-            <span className="license-date">
-              {license.issuingAgency}({license.issueDate})
-            </span>
-          </span>
-        </div>
+        <li>
+          <div className="timeline-content">
+            <h1>{license.acquisitionYear}</h1>
+            {acquireLicense}
+          </div>
+        </li>
       );
     });
 
@@ -128,84 +154,9 @@ class Career extends Component {
             <div className="circle_top" />
             <div className="circle_bottom" />
             <div className="license-title">License</div>
-            {/* {showLicense} */}
-            <div className="container">
+            <div className="timeline-container">
               <div className="timeline">
-                <ul>
-                  <li>
-                    <div className="timeline-content">
-                      <h1>2014</h1>
-                      <div>
-                        <span>
-                          · <span className="desc">웹디자인기능사</span>
-                          (2014/04. 한국산업인력공단)
-                        </span>
-                      </div>
-                      <div>
-                        <span>
-                          · <span className="desc">
-                            SOKI 국제 디자인&amp;일러스트레이션 입상
-                          </span>
-                          <br />
-                          (2014/01. 한국일러스트학회)
-                        </span>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="timeline-content">
-                      <h1>2009</h1>
-                      <div>
-                        <span>
-                          · <span className="desc">GTQ 포토샵</span>(2009/10.
-                          한국생산성본부 KPC)
-                        </span>
-                      </div>
-                      <div>
-                        <span>
-                          · <span className="desc">정보기기운용기능사</span>
-                          (2009/07. 한국산업인력공단)
-                        </span>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="timeline-content">
-                      <h1>2008</h1>
-                      <div>
-                        <span>
-                          ·{" "}
-                          <span className="desc">
-                            정보기술자격 ITQ 한글파워포인트
-                          </span>
-                          <br />
-                          (2008/06. 한국생산성본부 KPC)
-                        </span>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="timeline-content">
-                      <h1>2007</h1>
-                      <div>
-                        <span>
-                          · <span className="desc text">워드프로세서</span>
-                          (2007/08. 대한상공회의소)
-                        </span>
-                      </div>
-                      <div>
-                        <span>
-                          ·{" "}
-                          <span className="desc">
-                            정보기술자격 ITQ 아래한글
-                          </span>
-                          <br />
-                          (2007/07. 한국생산성본부 KPC)
-                        </span>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
+                <ul>{showLicense}</ul>
               </div>
             </div>
           </div>
