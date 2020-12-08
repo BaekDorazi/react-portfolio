@@ -14,11 +14,13 @@ class Career extends Component {
               licenseName: "웹디자인기능사",
               issuingAgency: "한국산업인력공단",
               issueDate: "2014.04",
+              isBr: false,
             },
             {
               licenseName: "SOKI 국제 디자인 & 일러스트레이션 입상",
               issuingAgency: "한국일러스트학회",
               issueDate: "2014.01",
+              isBr: false,
             },
           ],
         },
@@ -29,11 +31,13 @@ class Career extends Component {
               licenseName: "GTQ 포토샵",
               issuingAgency: "한국생산성본부 KPC",
               issueDate: "2009.10",
+              isBr: false,
             },
             {
               licenseName: "정보기기운용기능사",
               issuingAgency: "한국산업인력공단",
               issueDate: "2009.07",
+              isBr: false,
             },
           ],
         },
@@ -44,6 +48,7 @@ class Career extends Component {
               licenseName: "정보기술자격 ITQ 한글파워포인트",
               issuingAgency: "한국생산성본부 KPC",
               issueDate: "2008.06",
+              isBr: true,
             },
           ],
         },
@@ -54,11 +59,13 @@ class Career extends Component {
               licenseName: "워드프로세서",
               issuingAgency: "대한상공회의소",
               issueDate: "2007.08",
+              isBr: false,
             },
             {
               licenseName: "정보기술자격 ITQ 아래한글",
               issuingAgency: "한국생산성본부 KPC",
               issueDate: "2007.07",
+              isBr: true,
             },
           ],
         },
@@ -118,8 +125,8 @@ class Career extends Component {
       let acquireLicense = license.acquireLicense.map((elem) => {
         return (
           <div>
-            · <span className="desc">{elem.licenseName}</span>({elem.issueDate}.{" "}
-            {elem.issuingAgency})
+            · <span className="desc">{elem.licenseName}</span>
+            {elem.isBr && <br />}({elem.issueDate}. {elem.issuingAgency})
           </div>
         );
       });
