@@ -28,7 +28,11 @@
     transition: 0.3s;
   }
   .image {
+    background: #fff;
     position: relative;
+    font-size: 150pt;
+    padding: 30px;
+    border: 1px solid #d0d0d0;
   }
   .image img {
     vertical-align: bottom;

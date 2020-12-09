@@ -1,28 +1,29 @@
 import React, { Component } from "react";
-import profileImg from "../../images/profile_sh.jpg";
-import SunheeImg from "../../images/sunhee.jpg";
+
+import WorkspaceHwky from "components/Illustrations/WorkspaceHwky";
+import WorkingLatePukg from "components/Illustrations/WorkingLatePukg";
+import Rpm6 from "components/Illustrations/Rpm6";
 
 class Contact extends Component {
   render() {
     return (
       <div className="contact-container">
-          
         <ul>
           <li>
             <div class="image">
-              <img className="profile-img" src={profileImg} />
+              <WorkingLatePukg />
             </div>
             <div class="shadow"></div>
           </li>
           <li>
             <div class="image">
-              <img className="profile-img" src={SunheeImg} />
+            <WorkspaceHwky />
             </div>
             <div class="shadow"></div>
           </li>
           <li>
             <div class="image">
-              <img src="https://unsplash.it/300/200?image=433"></img>
+              <Rpm6 />
             </div>
             <div class="shadow"></div>
           </li>
