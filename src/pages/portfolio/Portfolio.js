@@ -1,9 +1,5 @@
 import React, { Component } from "react";
-import HTMLFlipBook from "react-pageflip";
-import Profile from "pages/profile/Profile";
-import Career from "pages/career/Career";
-import Contact from "pages/contact/Contact";
-import PortfolioPage from "components/PortfolioPage/PortfolioPage";
+import Pagination from "components/Pagination";
 
 class Portfolio extends Component {
   constructor(props) {
@@ -49,14 +45,37 @@ class Portfolio extends Component {
         },
       ], //포트폴리오 정보 저장하는 state
       fliterPortfolioArr: [], //포트폴리오 필터 state
+      totalCount: 0, //이벤트 영상 전체 갯수
+      activePage: 1, //active 된 페이지
+      rowCount: 6, //화면에 보여줄 갯수
     };
   }
 
   componentDidMount() {
-    const { portfolioArr } = this.state;
+    const { portfolioArr, fliterPortfolioArr } = this.state;
     this.setState({
       fliterPortfolioArr: portfolioArr,
+      totalCount: fliterPortfolioArr.length,
     });
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    const { fliterPortfolioArr } = this.state;
+    const { rowCount, activePage } = this.state;
+    let offset = rowCount * activePage - rowCount;
+
+    if (prevState.activePage !== activePage) {
+      // let totalCount = this.getEventVideoTotal(
+      //   cctvList[selectIdx].id,
+      //   startDate,
+      //   endDate,
+      //   rowCount,
+      //   offset
+      // );
+      // this.setState({
+      //   totalCount,
+      // });
+    }
   }
 
   handleOnClick = (num) => {
@@ -82,18 +101,39 @@ class Portfolio extends Component {
     this.setState({ fliterPortfolioArr: _portfolioArr });
   };
 
+  //페이지 변경될때 호출되는 메소드
+  handleOnPageChange = (pageNumber) => {
+    this.setState({
+      activePage: pageNumber,
+    });
+  };
+
   render() {
     const { fliterPortfolioArr } = this.state;
+    const { totalCount, rowCount, activePage } = this.state;
+
+    let filterList = ["전체", "aaaaaa", "bbbbbb", "cccccc"];
+    let showFilter = filterList.map((filter, idx) => {
+      return (
+        <div
+          onClick={() => {
+            this.handleOnClick(idx);
+          }}
+        >
+          {filter}
+        </div>
+      );
+    });
 
     let showPortfolioArr = (fliterPortfolioArr || []).map((portfolio, idx) => {
       return (
         <div
           className={
             portfolio.filterVal === "a"
-              ? "test-rect background-red"
+              ? "gallery background-red"
               : portfolio.filterVal === "b"
-              ? "test-rect background-blue"
-              : "test-rect background-yellow"
+              ? "gallery background-blue"
+              : "gallery background-yellow"
           }
         >
           {portfolio.title} / {idx}
@@ -103,58 +143,14 @@ class Portfolio extends Component {
 
     return (
       <div className="portfolio-container">
-        <div className="portfolio-contents-container">포트폴리오 내용 부분</div>
-        <div className="portfolio-filter-container">
-          <div className="portfolio-filter">
-            <div
-              className="test-margin"
-              onClick={() => {
-                this.handleOnClick(0);
-              }}
-            >
-              전체
-            </div>
-            <div
-              className="test-margin"
-              onClick={() => {
-                this.handleOnClick(1);
-              }}
-            >
-              aaaaaa
-            </div>
-            <div
-              className="test-margin"
-              onClick={() => {
-                this.handleOnClick(2);
-              }}
-            >
-              bbbbbb
-            </div>
-            <div
-              className="test-margin"
-              onClick={() => {
-                this.handleOnClick(3);
-              }}
-            >
-              cccccc
-            </div>
-          </div>
-          <div className="portfolio-list">{showPortfolioArr}</div>
-        </div>
-        {/* <HTMLFlipBook width={100} height={100}>
-          <div className="demoPage">
-            <Contact />
-          </div>
-          <div className="demoPage">
-            <PortfolioPage />
-          </div>
-          <div className="demoPage">
-            <Contact />
-          </div>
-          <div className="demoPage">
-            <PortfolioPage />
-          </div>
-        </HTMLFlipBook> */}
+        <div className="filter-container">{showFilter}</div>
+        <div className="portfolio-list">{showPortfolioArr}</div>
+        <Pagination
+          onPageChange={this.handleOnPageChange}
+          total={30}
+          rowCount={rowCount}
+          currentPage={activePage}
+        />
       </div>
     );
   }
