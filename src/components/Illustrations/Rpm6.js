@@ -83,7 +83,7 @@ class Rpm6 extends Component {
         <span class="path76"></span>
         <span class="path77"></span>
         {/* path78 - HTML */}
-        <span class="path78"></span>
+        {/* <span class="path78"></span> */}
         <span class="path79"></span>
         <span class="path80"></span>
         <span class="path81"></span>
@@ -92,7 +92,7 @@ class Rpm6 extends Component {
         <span class="path84"></span>
         <span class="path85"></span>
         {/* path86 - CSS */}
-        <span class="path86"></span>
+        {/* <span class="path86"></span> */}
         <span class="path87"></span>
         <span class="path88"></span>
         <span class="path89"></span>
