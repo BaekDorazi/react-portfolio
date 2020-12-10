@@ -7,7 +7,7 @@
   .filter-container {
     display: flex;
     justify-content: center;
-    margin: 50px;
+    margin: 40px;
   }
 
   //포트폴리오 리스트
@@ -16,22 +16,58 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin: 0 200px;
-    height: 70%;
 
-    .gallery {
-      margin: 20px;
+    .screen {
+      position: relative;
+      margin: 0 20px 25px 20px;
     }
 
-    .background-red {
-      background: red;
+    .screen img {
+      width: 100%;
+      height: auto;
     }
 
-    .background-blue {
-      background: blue;
+    .screen span {
+      display: block;
+      position: absolute;
+      background: #ffb000;
+      transition: all 0.7s;
     }
 
-    .background-yellow {
-      background: yellow;
+    .screen span:nth-child(1) {
+      top: 0;
+      height: 10px;
+      width: 0;
+    }
+    .screen span:nth-child(2) {
+      top: 0;
+      right: 0;
+      width: 10px;
+      height: 0;
+    }
+    .screen span:nth-child(3) {
+      bottom: 0;
+      right: 0;
+      height: 10px;
+      width: 0;
+    }
+    .screen span:nth-child(4) {
+      bottom: 0;
+      left: 0;
+      width: 10px;
+      height: 0;
+    }
+    .screen:hover span:nth-child(1) {
+      width: 100%;
+    }
+    .screen:hover span:nth-child(2) {
+      height: 100%;
+    }
+    .screen:hover span:nth-child(3) {
+      width: 100%;
+    }
+    .screen:hover span:nth-child(4) {
+      height: 100%;
     }
   }
 }
