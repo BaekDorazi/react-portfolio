@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import profileImg from "../../images/profile_sh.jpg";
 import Pagination from "components/Pagination";
 
 class Portfolio extends Component {
@@ -9,36 +10,42 @@ class Portfolio extends Component {
       portfolioArr: [
         {
           idx: 1,
+          image: profileImg,
           filterVal: "a",
           title: "test1",
           contents: "test1번의 포트폴리오",
         },
         {
           idx: 2,
+          image: profileImg,
           filterVal: "a",
           title: "test2",
           contents: "test2번의 포트폴리오",
         },
         {
           idx: 3,
+          image: profileImg,
           filterVal: "b",
           title: "test3",
           contents: "test3번의 포트폴리오",
         },
         {
           idx: 4,
+          image: profileImg,
           filterVal: "c",
           title: "test4",
           contents: "test4번의 포트폴리오",
         },
         {
           idx: 5,
+          image: profileImg,
           filterVal: "c",
           title: "test5",
           contents: "test5번의 포트폴리오",
         },
         {
           idx: 6,
+          image: profileImg,
           filterVal: "c",
           title: "test6",
           contents: "test6번의 포트폴리오",
@@ -59,6 +66,7 @@ class Portfolio extends Component {
     });
   }
 
+  //여기서 페이지 눌렀을때 json 값 변경
   componentDidUpdate(prevProps, prevState) {
     const { fliterPortfolioArr } = this.state;
     const { rowCount, activePage } = this.state;
@@ -127,17 +135,14 @@ class Portfolio extends Component {
 
     let showPortfolioArr = (fliterPortfolioArr || []).map((portfolio, idx) => {
       return (
-        <div
-          className={
-            portfolio.filterVal === "a"
-              ? "gallery background-red"
-              : portfolio.filterVal === "b"
-              ? "gallery background-blue"
-              : "gallery background-yellow"
-          }
-        >
-          {portfolio.title} / {idx}
-        </div>
+          <div className="screen">
+            {/* {portfolio.title} / {idx} */}
+            <span />
+            <span />
+            <span />
+            <span />
+            <img src={profileImg} />
+          </div>
       );
     });
 
