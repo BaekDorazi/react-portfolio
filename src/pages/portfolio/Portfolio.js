@@ -3,6 +3,7 @@ import profileImg from "../../images/profile_sh.jpg";
 import profileImg2 from "../../images/profile_sh2.jpg";
 import profileImg3 from "../../images/profile_sh3.jpg";
 import Pagination from "components/Pagination";
+import PortfolioModal from "components/PortfolioModal/PortfolioModal";
 
 class Portfolio extends Component {
   constructor(props) {
@@ -170,6 +171,8 @@ class Portfolio extends Component {
       totalCount: 0, //이벤트 영상 전체 갯수
       activePage: 1, //active 된 페이지
       rowCount: 6, //화면에 보여줄 갯수
+      portfolioModal: false, //포트폴리오 상세보기 모달 상태
+      portfolioInfo: {}, //선택된 포트폴리오 정보
     };
   }
 
@@ -236,14 +239,26 @@ class Portfolio extends Component {
     });
   };
 
+  //모달창 상태 변경 메소드
+  toggleModal = (idx) => {
+    const { portfolioModal, showPortfolioArr } = this.state;
+    let portfolioInfo = showPortfolioArr.find((elem) => elem.idx === idx); //선택 된 포트폴리오 정보 모달로 넘겨주기 위해
+
+    this.setState({
+      portfolioModal: !portfolioModal,
+      portfolioInfo: portfolioInfo,
+    });
+  };
+
   render() {
-    const { showPortfolioArr } = this.state;
+    const { showPortfolioArr, portfolioModal, portfolioInfo } = this.state;
     const { totalCount, rowCount, activePage } = this.state;
 
     let filterList = ["전체", "aaaaaa", "bbbbbb", "cccccc"];
     let filterComp = filterList.map((filter, idx) => {
       return (
         <div
+          className="filter"
           onClick={() => {
             this.handleOnFilterClick(idx);
           }}
@@ -255,13 +270,18 @@ class Portfolio extends Component {
 
     let portfolioComp = (showPortfolioArr || []).map((portfolio, idx) => {
       return (
-        <div className="screen">
-          <span />
-          <span />
-          <span />
-          <span />
-          <div>{portfolio.title}</div>
-          <img src={portfolio.image} />
+        <div>
+          <div
+            className="screen"
+            onClick={() => this.toggleModal(portfolio.idx)}
+          >
+            <span />
+            <span />
+            <span />
+            <span />
+            <div>{portfolio.title}</div>
+            <img src={portfolio.image} />
+          </div>
         </div>
       );
     });
@@ -276,6 +296,13 @@ class Portfolio extends Component {
           rowCount={rowCount}
           currentPage={activePage}
         />
+        {portfolioModal && (
+          <PortfolioModal
+            show={portfolioModal}
+            toggle={this.toggleModal}
+            portfolioInfo={portfolioInfo}
+          />
+        )}
       </div>
     );
   }
