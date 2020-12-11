@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import profileImg from "../../images/profile_sh.jpg";
+import profileImg2 from "../../images/profile_sh2.jpg";
+import profileImg3 from "../../images/profile_sh3.jpg";
 import Pagination from "components/Pagination";
 
 class Portfolio extends Component {
@@ -24,34 +26,147 @@ class Portfolio extends Component {
         },
         {
           idx: 3,
-          image: profileImg,
+          image: profileImg2,
           filterVal: "b",
           title: "test3",
           contents: "test3번의 포트폴리오",
         },
         {
           idx: 4,
-          image: profileImg,
+          image: profileImg3,
           filterVal: "c",
           title: "test4",
           contents: "test4번의 포트폴리오",
         },
         {
           idx: 5,
-          image: profileImg,
+          image: profileImg3,
           filterVal: "c",
           title: "test5",
           contents: "test5번의 포트폴리오",
         },
         {
           idx: 6,
-          image: profileImg,
+          image: profileImg3,
           filterVal: "c",
           title: "test6",
           contents: "test6번의 포트폴리오",
         },
-      ], //포트폴리오 정보 저장하는 state
-      fliterPortfolioArr: [], //포트폴리오 필터 state
+        {
+          idx: 7,
+          image: profileImg,
+          filterVal: "a",
+          title: "test7",
+          contents: "test1번의 포트폴리오",
+        },
+        {
+          idx: 8,
+          image: profileImg,
+          filterVal: "a",
+          title: "test8",
+          contents: "test2번의 포트폴리오",
+        },
+        {
+          idx: 9,
+          image: profileImg2,
+          filterVal: "b",
+          title: "test9",
+          contents: "test3번의 포트폴리오",
+        },
+        {
+          idx: 10,
+          image: profileImg3,
+          filterVal: "c",
+          title: "test10",
+          contents: "test4번의 포트폴리오",
+        },
+        {
+          idx: 11,
+          image: profileImg3,
+          filterVal: "c",
+          title: "test11",
+          contents: "test5번의 포트폴리오",
+        },
+        {
+          idx: 12,
+          image: profileImg,
+          filterVal: "a",
+          title: "test12",
+          contents: "test1번의 포트폴리오",
+        },
+        {
+          idx: 13,
+          image: profileImg,
+          filterVal: "a",
+          title: "test13",
+          contents: "test2번의 포트폴리오",
+        },
+        {
+          idx: 14,
+          image: profileImg2,
+          filterVal: "b",
+          title: "test14",
+          contents: "test3번의 포트폴리오",
+        },
+        {
+          idx: 15,
+          image: profileImg3,
+          filterVal: "c",
+          title: "test15",
+          contents: "test4번의 포트폴리오",
+        },
+        {
+          idx: 16,
+          image: profileImg3,
+          filterVal: "c",
+          title: "test16",
+          contents: "test5번의 포트폴리오",
+        },
+        {
+          idx: 17,
+          image: profileImg3,
+          filterVal: "c",
+          title: "test17",
+          contents: "test6번의 포트폴리오",
+        },
+        {
+          idx: 18,
+          image: profileImg,
+          filterVal: "a",
+          title: "test18",
+          contents: "test1번의 포트폴리오",
+        },
+        {
+          idx: 19,
+          image: profileImg,
+          filterVal: "a",
+          title: "test19",
+          contents: "test2번의 포트폴리오",
+        },
+        {
+          idx: 20,
+          image: profileImg2,
+          filterVal: "b",
+          title: "test20",
+          contents: "test3번의 포트폴리오",
+        },
+        {
+          idx: 21,
+          image: profileImg3,
+          filterVal: "c",
+          title: "test21",
+          contents: "test4번의 포트폴리오",
+        },
+        {
+          idx: 22,
+          image: profileImg3,
+          filterVal: "c",
+          title: "test22",
+          contents: "test5번의 포트폴리오",
+        },
+      ], //포트폴리오 전체 json
+      filterPortfolioArr: [], //필터상태 포트폴리오 json
+      showPortfolioArr: [], //한페이지에 보여줘야 할 json
       totalCount: 0, //이벤트 영상 전체 갯수
       activePage: 1, //active 된 페이지
       rowCount: 6, //화면에 보여줄 갯수
@@ -59,54 +174,59 @@ class Portfolio extends Component {
   }
 
   componentDidMount() {
-    const { portfolioArr, fliterPortfolioArr } = this.state;
+    const { portfolioArr, rowCount } = this.state;
+    let _portfolioArr = portfolioArr.slice(0, rowCount);
+
     this.setState({
-      fliterPortfolioArr: portfolioArr,
-      totalCount: fliterPortfolioArr.length,
+      filterPortfolioArr: portfolioArr,
+      showPortfolioArr: _portfolioArr,
+      totalCount: portfolioArr.length,
     });
   }
 
-  //여기서 페이지 눌렀을때 json 값 변경
   componentDidUpdate(prevProps, prevState) {
-    const { fliterPortfolioArr } = this.state;
+    const { filterPortfolioArr } = this.state;
     const { rowCount, activePage } = this.state;
     let offset = rowCount * activePage - rowCount;
 
     if (prevState.activePage !== activePage) {
-      // let totalCount = this.getEventVideoTotal(
-      //   cctvList[selectIdx].id,
-      //   startDate,
-      //   endDate,
-      //   rowCount,
-      //   offset
-      // );
-      // this.setState({
-      //   totalCount,
-      // });
+      let _portfolioArr = filterPortfolioArr.slice(offset, offset + rowCount);
+      this.setState({ showPortfolioArr: _portfolioArr });
     }
   }
 
-  handleOnClick = (num) => {
-    const { portfolioArr } = this.state;
+  //필터 눌렀을때 처리되는 메소드
+  handleOnFilterClick = (num) => {
+    const { portfolioArr, rowCount } = this.state;
     let _portfolioArr = portfolioArr;
+    let filterPortfolioArr = [];
+    let filterPortfolioLength;
 
     if (num === 0) {
-      _portfolioArr = _portfolioArr;
+      filterPortfolioArr = _portfolioArr;
     } else if (num === 1) {
-      _portfolioArr = _portfolioArr.filter(
+      filterPortfolioArr = _portfolioArr.filter(
         (portfolio) => portfolio.filterVal === "a"
       );
     } else if (num === 2) {
-      _portfolioArr = _portfolioArr.filter(
+      filterPortfolioArr = _portfolioArr.filter(
         (portfolio) => portfolio.filterVal === "b"
       );
     } else if (num === 3) {
-      _portfolioArr = _portfolioArr.filter(
+      filterPortfolioArr = _portfolioArr.filter(
         (portfolio) => portfolio.filterVal === "c"
       );
     }
 
-    this.setState({ fliterPortfolioArr: _portfolioArr });
+    filterPortfolioLength = filterPortfolioArr.length;
+    _portfolioArr = filterPortfolioArr.slice(0, rowCount);
+
+    this.setState({
+      filterPortfolioArr: filterPortfolioArr,
+      showPortfolioArr: _portfolioArr,
+      totalCount: filterPortfolioLength,
+      activePage: 1,
+    });
   };
 
   //페이지 변경될때 호출되는 메소드
@@ -117,15 +237,15 @@ class Portfolio extends Component {
   };
 
   render() {
-    const { fliterPortfolioArr } = this.state;
+    const { showPortfolioArr } = this.state;
     const { totalCount, rowCount, activePage } = this.state;
 
     let filterList = ["전체", "aaaaaa", "bbbbbb", "cccccc"];
-    let showFilter = filterList.map((filter, idx) => {
+    let filterComp = filterList.map((filter, idx) => {
       return (
         <div
           onClick={() => {
-            this.handleOnClick(idx);
+            this.handleOnFilterClick(idx);
           }}
         >
           {filter}
@@ -133,26 +253,26 @@ class Portfolio extends Component {
       );
     });
 
-    let showPortfolioArr = (fliterPortfolioArr || []).map((portfolio, idx) => {
+    let portfolioComp = (showPortfolioArr || []).map((portfolio, idx) => {
       return (
-          <div className="screen">
-            {/* {portfolio.title} / {idx} */}
-            <span />
-            <span />
-            <span />
-            <span />
-            <img src={profileImg} />
-          </div>
+        <div className="screen">
+          <span />
+          <span />
+          <span />
+          <span />
+          <div>{portfolio.title}</div>
+          <img src={portfolio.image} />
+        </div>
       );
     });
 
     return (
       <div className="portfolio-container">
-        <div className="filter-container">{showFilter}</div>
-        <div className="portfolio-list">{showPortfolioArr}</div>
+        <div className="filter-container">{filterComp}</div>
+        <div className="portfolio-list">{portfolioComp}</div>
         <Pagination
           onPageChange={this.handleOnPageChange}
-          total={30}
+          total={totalCount}
           rowCount={rowCount}
           currentPage={activePage}
         />

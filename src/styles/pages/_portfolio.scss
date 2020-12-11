@@ -15,11 +15,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    margin: 0 200px;
+    margin: 0 300px;
 
     .screen {
       position: relative;
-      margin: 0 20px 25px 20px;
+      margin: 0 20px 50px 20px;
     }
 
     .screen img {
@@ -68,6 +68,19 @@
     }
     .screen:hover span:nth-child(4) {
       height: 100%;
+    }
+
+    .screen div {
+      display: none;
+    }
+
+    .screen:hover div {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: white;
+      font-size: 20pt;
     }
   }
 }
