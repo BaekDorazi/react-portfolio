@@ -3,187 +3,97 @@
   width: 100%;
   height: 100%;
 
-  .width-size-up {
+  @media (max-width: 1144px) {
     display: flex;
     flex-direction: column;
+    padding-top: 139px;
+  }
 
-    //포트폴리오 필터
-    .filter-container {
-      display: flex;
-      justify-content: center;
-      margin: 30px;
-    }
+  //포트폴리오 필터
+  .filter-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+  }
 
-    //포트폴리오 리스트
-    .portfolio-list {
+  //포트폴리오 리스트
+  .portfolio-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 300px;
+
+    @media (max-width: 1144px) {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      margin: 0 300px;
-
-      .screen {
-        position: relative;
-        margin: 0 20px 50px 20px;
-      }
-
-      .screen img {
-        width: 100%;
-        height: auto;
-      }
-
-      .screen span {
-        display: block;
-        position: absolute;
-        background: #ffb000;
-        transition: all 0.7s;
-      }
-
-      .screen span:nth-child(1) {
-        top: 0;
-        height: 10px;
-        width: 0;
-      }
-      .screen span:nth-child(2) {
-        top: 0;
-        right: 0;
-        width: 10px;
-        height: 0;
-      }
-      .screen span:nth-child(3) {
-        bottom: 0;
-        right: 0;
-        height: 10px;
-        width: 0;
-      }
-      .screen span:nth-child(4) {
-        bottom: 0;
-        left: 0;
-        width: 10px;
-        height: 0;
-      }
-      .screen:hover span:nth-child(1) {
-        width: 100%;
-      }
-      .screen:hover span:nth-child(2) {
-        height: 100%;
-      }
-      .screen:hover span:nth-child(3) {
-        width: 100%;
-      }
-      .screen:hover span:nth-child(4) {
-        height: 100%;
-      }
-
-      .screen div {
-        display: none;
-      }
-
-      .screen:hover div {
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        color: white;
-        font-size: 20pt;
-      }
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 1fr);
+      margin: 0;
     }
-  }
 
-  .width-size-down {
-    display: none;
-  }
+    .screen {
+      position: relative;
+      margin: 0 20px 50px 20px;
+    }
 
-  //페이지 width사이즈가 1145사이즈 미만일때
-  @media (max-width: 1144px) {
-    .width-size-up {
+    .screen img {
+      width: 100%;
+      height: auto;
+    }
+
+    .screen span {
+      display: block;
+      position: absolute;
+      background: #ffb000;
+      transition: all 0.7s;
+    }
+
+    .screen span:nth-child(1) {
+      top: 0;
+      height: 10px;
+      width: 0;
+    }
+    .screen span:nth-child(2) {
+      top: 0;
+      right: 0;
+      width: 10px;
+      height: 0;
+    }
+    .screen span:nth-child(3) {
+      bottom: 0;
+      right: 0;
+      height: 10px;
+      width: 0;
+    }
+    .screen span:nth-child(4) {
+      bottom: 0;
+      left: 0;
+      width: 10px;
+      height: 0;
+    }
+    .screen:hover span:nth-child(1) {
+      width: 100%;
+    }
+    .screen:hover span:nth-child(2) {
+      height: 100%;
+    }
+    .screen:hover span:nth-child(3) {
+      width: 100%;
+    }
+    .screen:hover span:nth-child(4) {
+      height: 100%;
+    }
+
+    .screen div {
       display: none;
     }
 
-    .width-size-down {
-      display: flex;
-      flex-direction: column;
-      padding-top: 95px;
-
-      //포트폴리오 필터
-      .filter-container {
-        display: flex;
-        justify-content: center;
-        margin: 15px 30px;
-      }
-
-      //포트폴리오 리스트
-      .portfolio-list {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
-        // margin: 0 300px;
-
-        .screen {
-          position: relative;
-          margin: 0 20px 50px 20px;
-        }
-
-        .screen img {
-          width: 100%;
-          height: auto;
-        }
-
-        .screen span {
-          display: block;
-          position: absolute;
-          background: #ffb000;
-          transition: all 0.7s;
-        }
-
-        .screen span:nth-child(1) {
-          top: 0;
-          height: 10px;
-          width: 0;
-        }
-        .screen span:nth-child(2) {
-          top: 0;
-          right: 0;
-          width: 10px;
-          height: 0;
-        }
-        .screen span:nth-child(3) {
-          bottom: 0;
-          right: 0;
-          height: 10px;
-          width: 0;
-        }
-        .screen span:nth-child(4) {
-          bottom: 0;
-          left: 0;
-          width: 10px;
-          height: 0;
-        }
-        .screen:hover span:nth-child(1) {
-          width: 100%;
-        }
-        .screen:hover span:nth-child(2) {
-          height: 100%;
-        }
-        .screen:hover span:nth-child(3) {
-          width: 100%;
-        }
-        .screen:hover span:nth-child(4) {
-          height: 100%;
-        }
-
-        .screen div {
-          display: none;
-        }
-
-        .screen:hover div {
-          display: block;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          color: white;
-          font-size: 20pt;
-        }
-      }
+    .screen:hover div {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: white;
+      font-size: 20pt;
     }
   }
 }
