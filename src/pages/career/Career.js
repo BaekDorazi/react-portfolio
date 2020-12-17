@@ -156,23 +156,7 @@ class Career extends Component {
 
     return (
       <div className="career-container">
-        {/* width 1145px 이상일때 보여줌 */}
-        <div className="width-size-up">
-          <div className="license-container">
-            <div className="circle_top" />
-            <div className="circle_bottom" />
-            <div className="license-title">License</div>
-            <div className="timeline-container">
-              <div className="timeline">
-                <ul>{showLicense}</ul>
-              </div>
-            </div>
-          </div>
-          <div className="skill-container">{showSkill}</div>
-        </div>
-
-        {/* width 1144px 미만일때 보여줌 */}
-        <div className="width-size-down">
+        <div className="license-skill-container">
           <div className="license-container">
             <div className="circle_top" />
             <div className="circle_bottom" />
