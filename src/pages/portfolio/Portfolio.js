@@ -288,21 +288,41 @@ class Portfolio extends Component {
 
     return (
       <div className="portfolio-container">
-        <div className="filter-container">{filterComp}</div>
-        <div className="portfolio-list">{portfolioComp}</div>
-        <Pagination
-          onPageChange={this.handleOnPageChange}
-          total={totalCount}
-          rowCount={rowCount}
-          currentPage={activePage}
-        />
-        {portfolioModal && (
-          <PortfolioModal
-            show={portfolioModal}
-            toggle={this.toggleModal}
-            portfolioInfo={portfolioInfo}
+        <div className="width-size-up">
+          <div className="filter-container">{filterComp}</div>
+          <div className="portfolio-list">{portfolioComp}</div>
+          <Pagination
+            onPageChange={this.handleOnPageChange}
+            total={totalCount}
+            rowCount={rowCount}
+            currentPage={activePage}
           />
-        )}
+          {portfolioModal && (
+            <PortfolioModal
+              show={portfolioModal}
+              toggle={this.toggleModal}
+              portfolioInfo={portfolioInfo}
+            />
+          )}
+        </div>
+
+        <div className="width-size-down">
+          <div className="filter-container">{filterComp}</div>
+          <div className="portfolio-list">{portfolioComp}</div>
+          <Pagination
+            onPageChange={this.handleOnPageChange}
+            total={totalCount}
+            rowCount={rowCount}
+            currentPage={activePage}
+          />
+          {portfolioModal && (
+            <PortfolioModal
+              show={portfolioModal}
+              toggle={this.toggleModal}
+              portfolioInfo={portfolioInfo}
+            />
+          )}
+        </div>
       </div>
     );
   }
