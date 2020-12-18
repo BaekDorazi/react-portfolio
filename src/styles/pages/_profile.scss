@@ -39,22 +39,6 @@
           width: 100%;
           height: auto;
         }
-
-        //mail, sns, git
-        .stats {
-          text-align: left;
-          margin: 0 0 75px 10px;
-          align-self: flex-end;
-
-          .box {
-            font-size: 20px;
-
-            &:hover {
-              color: #fff;
-              cursor: pointer;
-            }
-          }
-        }
       }
     }
 
@@ -129,23 +113,6 @@
         .profile-img {
           width: 90%;
           height: 15%;
-        }
-
-        //mail, sns, git
-        .stats {
-          display: flex;
-          text-align: left;
-          margin: 10px 20px;
-          justify-content: space-around;
-
-          .box {
-            font-size: 20px;
-
-            &:hover {
-              color: #fff;
-              cursor: pointer;
-            }
-          }
         }
       }
 

@@ -11,20 +11,6 @@ class Profile extends Component {
             <div className="profile-text">MEDIA ART &amp; WEBDESIGN</div>
             <div className="profile-contents">
               <img className="profile-img" src={profileImg} />
-              <div className="stats">
-                <div>
-                  <i className="icon-bubbles box"> talk</i>
-                </div>
-                <div>
-                  <i className="icon-drawer2 box"> mail</i>
-                </div>
-                <div>
-                  <i className="icon-instagram box"> sns</i>
-                </div>
-                <div>
-                  <i className="icon-github box"> git</i>
-                </div>
-              </div>
             </div>
           </div>
           <div className="right-contents">
@@ -109,20 +95,6 @@ class Profile extends Component {
           <div className="top-contents">
             <div className="profile-text">MEDIA ART &amp; WEBDESIGN</div>
             <img className="profile-img" src={profileImg} />
-            <div className="stats">
-              <div>
-                <i className="icon-bubbles box"> talk</i>
-              </div>
-              <div>
-                <i className="icon-drawer2 box"> mail</i>
-              </div>
-              <div>
-                <i className="icon-instagram box"> sns</i>
-              </div>
-              <div>
-                <i className="icon-github box"> git</i>
-              </div>
-            </div>
           </div>
           <div className="down-contents">
             <div className="main-title">Yusunhee_Portfolio.</div>

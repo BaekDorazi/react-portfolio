@@ -17,7 +17,7 @@ class Contact extends Component {
           </li>
           <li>
             <div class="image">
-            <WorkspaceHwky />
+              <WorkspaceHwky />
             </div>
             <div class="shadow"></div>
           </li>
@@ -28,6 +28,29 @@ class Contact extends Component {
             <div class="shadow"></div>
           </li>
         </ul>
+
+        <div className="stats">
+          <div>
+            <i className="icon-bubbles box" onClick={this.test}>
+              {" "}
+              {/* {!talkClick ? "talk" : "yusunhee18"} */}
+              talk
+            </i>
+          </div>
+          <div>
+            <i className="icon-drawer2 box"> mail</i>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/yusunhee_/" target="_blank">
+              <i className="icon-instagram box"> sns</i>
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/yusunhee" target="_blank">
+              <i className="icon-github box"> git</i>
+            </a>
+          </div>
+        </div>
       </div>
     );
   }
