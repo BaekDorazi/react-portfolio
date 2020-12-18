@@ -34,8 +34,8 @@ $yellow: #ffb000;
 
       .circle_top {
         position: absolute;
-        top: 50px;
-        left: 850px;
+        top: 24%;
+        left: 43%;
         width: 150px;
         height: 150px;
         border-radius: 50%;
@@ -45,16 +45,16 @@ $yellow: #ffb000;
 
         @keyframes move1 {
           50% {
-            top: -30px;
-            left: 700px;
+            top: 14%;
+            left: 37%;
           }
         }
       }
 
       .circle_bottom {
         position: absolute;
-        top: 550px;
-        left: 30px;
+        top: 70%;
+        left: 5%;
         width: 370px;
         height: 370px;
         border-radius: 50%;
@@ -64,8 +64,8 @@ $yellow: #ffb000;
 
         @keyframes move2 {
           50% {
-            top: 530px;
-            left: 70px;
+            top: 72%;
+            left: 3%;
           }
         }
       }
