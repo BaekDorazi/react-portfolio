@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react-yu-baek-portfolio/static/css/main.1a73aa98.chunk.css",
+    "main.js": "/react-yu-baek-portfolio/static/js/main.92eaf419.chunk.js",
+    "main.js.map": "/react-yu-baek-portfolio/static/js/main.92eaf419.chunk.js.map",
+    "runtime-main.js": "/react-yu-baek-portfolio/static/js/runtime-main.bb3dbbfd.js",
+    "runtime-main.js.map": "/react-yu-baek-portfolio/static/js/runtime-main.bb3dbbfd.js.map",
+    "static/js/2.37bc68d4.chunk.js": "/react-yu-baek-portfolio/static/js/2.37bc68d4.chunk.js",
+    "static/js/2.37bc68d4.chunk.js.map": "/react-yu-baek-portfolio/static/js/2.37bc68d4.chunk.js.map",
+    "index.html": "/react-yu-baek-portfolio/index.html",
+    "precache-manifest.ece609130124e2130464d0fe3309ac54.js": "/react-yu-baek-portfolio/precache-manifest.ece609130124e2130464d0fe3309ac54.js",
+    "service-worker.js": "/react-yu-baek-portfolio/service-worker.js",
+    "static/css/main.1a73aa98.chunk.css.map": "/react-yu-baek-portfolio/static/css/main.1a73aa98.chunk.css.map",
+    "static/js/2.37bc68d4.chunk.js.LICENSE.txt": "/react-yu-baek-portfolio/static/js/2.37bc68d4.chunk.js.LICENSE.txt",
+    "static/media/profile_sh.jpg": "/react-yu-baek-portfolio/static/media/profile_sh.75fa5b12.jpg",
+    "static/media/profile_sh2.jpg": "/react-yu-baek-portfolio/static/media/profile_sh2.a734adbe.jpg",
+    "static/media/profile_sh3.jpg": "/react-yu-baek-portfolio/static/media/profile_sh3.1cb7202d.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bb3dbbfd.js",
+    "static/js/2.37bc68d4.chunk.js",
+    "static/css/main.1a73aa98.chunk.css",
+    "static/js/main.92eaf419.chunk.js"
+  ]
+}
