@@ -2,6 +2,8 @@
   padding-top: 44px;
   width: 100%;
   height: 100%;
+  display: flex;
+  background: #ffb000;
 
   @media (max-width: 1144px) {
     display: flex;
@@ -11,10 +13,11 @@
 
   //포트폴리오 필터
   .filter-container {
-    display: flex;
     justify-content: center;
     margin: 30px;
     text-align: center;
+    flex: 1.5;
+    align-self: center;
 
     .filter {
       text-decoration: none;
@@ -24,7 +27,7 @@
       position: relative;
       z-index: 0;
       cursor: pointer;
-      color: #000;
+      color: #fff;
     }
   }
 
@@ -39,13 +42,13 @@
 
   .brackets div:before {
     content: "(";
-    left: 0px;
+    left: 25%;
     transform: translateX(10px);
   }
 
   .brackets div:after {
     content: ")";
-    right: 0px;
+    right: 25%;
     transform: translateX(-10px);
   }
 
@@ -55,84 +58,90 @@
     transform: translateX(0px);
   }
 
-  //포트폴리오 리스트
-  .portfolio-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin: 0 300px;
+  .list-container {
+    flex: 8.5;
+    margin: 0;
+    padding: 15px;
+    background: #fff;
 
-    @media (max-width: 1144px) {
+    //포트폴리오 리스트
+    .portfolio-list {
       display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(6, 1fr);
-      margin: 0;
-    }
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
 
-    .screen {
-      position: relative;
-      margin: 0 20px 50px 20px;
-    }
+      @media (max-width: 1144px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        margin: 0;
+      }
 
-    .screen img {
-      width: 100%;
-      height: auto;
-    }
+      .screen {
+        position: relative;
+        margin: 0 20px 50px 20px;
+      }
 
-    .screen span {
-      display: block;
-      position: absolute;
-      background: #ffb000;
-      transition: all 0.7s;
-    }
+      .screen img {
+        width: 100%;
+        height: auto;
+      }
 
-    .screen span:nth-child(1) {
-      top: 0;
-      height: 10px;
-      width: 0;
-    }
-    .screen span:nth-child(2) {
-      top: 0;
-      right: 0;
-      width: 10px;
-      height: 0;
-    }
-    .screen span:nth-child(3) {
-      bottom: 0;
-      right: 0;
-      height: 10px;
-      width: 0;
-    }
-    .screen span:nth-child(4) {
-      bottom: 0;
-      left: 0;
-      width: 10px;
-      height: 0;
-    }
-    .screen:hover span:nth-child(1) {
-      width: 100%;
-    }
-    .screen:hover span:nth-child(2) {
-      height: 100%;
-    }
-    .screen:hover span:nth-child(3) {
-      width: 100%;
-    }
-    .screen:hover span:nth-child(4) {
-      height: 100%;
-    }
+      .screen span {
+        display: block;
+        position: absolute;
+        background: #ffb000;
+        transition: all 0.7s;
+      }
 
-    .screen div {
-      display: none;
-    }
+      .screen span:nth-child(1) {
+        top: 0;
+        height: 10px;
+        width: 0;
+      }
+      .screen span:nth-child(2) {
+        top: 0;
+        right: 0;
+        width: 10px;
+        height: 0;
+      }
+      .screen span:nth-child(3) {
+        bottom: 0;
+        right: 0;
+        height: 10px;
+        width: 0;
+      }
+      .screen span:nth-child(4) {
+        bottom: 0;
+        left: 0;
+        width: 10px;
+        height: 0;
+      }
+      .screen:hover span:nth-child(1) {
+        width: 100%;
+      }
+      .screen:hover span:nth-child(2) {
+        height: 100%;
+      }
+      .screen:hover span:nth-child(3) {
+        width: 100%;
+      }
+      .screen:hover span:nth-child(4) {
+        height: 100%;
+      }
 
-    .screen:hover div {
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      color: white;
-      font-size: 20pt;
+      .screen div {
+        display: none;
+      }
+
+      .screen:hover div {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: white;
+        font-size: 20pt;
+      }
     }
   }
 }
