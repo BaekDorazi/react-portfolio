@@ -288,7 +288,7 @@ class Portfolio extends Component {
 
     return (
       <div className="portfolio-container">
-        <div className="filter-container">{filterComp}</div>
+        <div className="filter-container brackets">{filterComp}</div>
         <div className="portfolio-list">{portfolioComp}</div>
         <Pagination
           onPageChange={this.handleOnPageChange}
