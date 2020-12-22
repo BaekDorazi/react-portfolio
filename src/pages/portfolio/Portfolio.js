@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import profileImg from "../../images/profile_sh.jpg";
-import profileImg2 from "../../images/profile_sh2.jpg";
-import profileImg3 from "../../images/profile_sh3.jpg";
+import profileImg from "../../images/screensaver_01.png";
+import profileImg2 from "../../images/homepage_01.png";
+import profileImg3 from "../../images/webbanner_01.png";
 import Pagination from "components/Pagination";
 import PortfolioModal from "components/PortfolioModal/PortfolioModal";
 
@@ -254,7 +254,7 @@ class Portfolio extends Component {
     const { showPortfolioArr, portfolioModal, portfolioInfo } = this.state;
     const { totalCount, rowCount, activePage } = this.state;
 
-    let filterList = ["전체", "aaaaaa", "bbbbbb", "cccccc"];
+    let filterList = ["전체", "웹/모바일", "편집디자인", "기타"];
     let filterComp = filterList.map((filter, idx) => {
       return (
         <div

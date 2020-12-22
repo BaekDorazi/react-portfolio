@@ -7,10 +7,14 @@ class PortfolioModal extends Component {
 
     return (
       <div>
-        <Modal isOpen={show} toggle={toggle}>
+        <Modal
+          contentClassName="custom-modal"
+          isOpen={show}
+          toggle={toggle}
+        >
           <ModalHeader toggle={toggle}>{portfolioInfo.title}</ModalHeader>
           <ModalBody>
-            <img src={portfolioInfo.image} width="200px" height="auto" />
+            <img src={portfolioInfo.image} width="100%" height="auto" />
           </ModalBody>
           <ModalFooter>{portfolioInfo.contents}</ModalFooter>
         </Modal>
