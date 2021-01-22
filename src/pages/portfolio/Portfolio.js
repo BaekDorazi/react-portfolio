@@ -21,7 +21,11 @@ class Portfolio extends Component {
           period: "2019.05.21 - 05.24",
           work: "디자인 및 리사이징",
           tool: "Ps/Ai",
-          contents: "이오스안과 SNS 인스타그램&페이스북 등에 노출 되는 광고 배너",
+          contents: [
+            "이오스안과 SNS",
+            "인스타그램&페이스북 등에",
+            "노출 되는 광고 배너",
+          ],
         },
         {
           idx: 2,
@@ -32,7 +36,11 @@ class Portfolio extends Component {
           period: "2019.05.21 - 05.24",
           work: "디자인 및 리사이징",
           tool: "Ps/Ai",
-          contents: "이오스안과 SNS 인스타그램&페이스북 등에 노출 되는 광고 배너",
+          contents: [
+            "이오스안과 SNS",
+            "인스타그램&페이스북 등에",
+            "노출 되는 광고 배너",
+          ],
         },
         {
           idx: 3,
@@ -43,7 +51,11 @@ class Portfolio extends Component {
           period: "2019.05.21 - 05.24",
           work: "디자인 및 리사이징",
           tool: "Ps/Ai",
-          contents: "이오스안과 SNS 인스타그램&페이스북 등에 노출 되는 광고 배너",
+          contents: [
+            "이오스안과 SNS",
+            "인스타그램&페이스북 등에",
+            "노출 되는 광고 배너",
+          ],
         },
         {
           idx: 4,
@@ -54,8 +66,12 @@ class Portfolio extends Component {
           period: "2019.05.21 - 05.24",
           work: "디자인 및 리사이징",
           tool: "Ps/Ai",
-          contents: "이오스안과 SNS 인스타그램&페이스북 등에 노출 되는 광고 배너",
-        }
+          contents: [
+            "이오스안과 SNS",
+            "인스타그램&페이스북 등에",
+            "노출 되는 광고 배너",
+          ],
+        },
       ], //포트폴리오 전체 json
       filterPortfolioArr: [], //필터상태 포트폴리오 json
       showPortfolioArr: [], //한페이지에 보여줘야 할 json
