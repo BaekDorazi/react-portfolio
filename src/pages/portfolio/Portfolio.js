@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import profileImg from "../../images/screensaver_01.png";
 import profileImg2 from "../../images/homepage_01.png";
 import profileImg3 from "../../images/webbanner_01.png";
+import portfolioTest from "../../images/portfolio_test.png";
 import Pagination from "components/Pagination";
 import PortfolioModal from "components/PortfolioModal/PortfolioModal";
 
@@ -13,158 +14,48 @@ class Portfolio extends Component {
       portfolioArr: [
         {
           idx: 1,
-          image: profileImg,
-          filterVal: "a",
-          title: "test1",
-          contents: "test1번의 포트폴리오",
+          image: portfolioTest,
+          filterVal: "device", //웹/모바일(device), 편집디자인(edit), 기타(etc) 필터값
+          subTitle: "SNS CONTENTS",
+          title: "콘텐츠 배너",
+          period: "2019.05.21 - 05.24",
+          work: "디자인 및 리사이징",
+          tool: "Ps/Ai",
+          contents: "이오스안과 SNS 인스타그램&페이스북 등에 노출 되는 광고 배너",
         },
         {
           idx: 2,
           image: profileImg,
-          filterVal: "a",
-          title: "test2",
-          contents: "test2번의 포트폴리오",
+          filterVal: "edit",
+          subTitle: "SNS CONTENTS2",
+          title: "콘텐츠 배너2",
+          period: "2019.05.21 - 05.24",
+          work: "디자인 및 리사이징",
+          tool: "Ps/Ai",
+          contents: "이오스안과 SNS 인스타그램&페이스북 등에 노출 되는 광고 배너",
         },
         {
           idx: 3,
           image: profileImg2,
-          filterVal: "b",
-          title: "test3",
-          contents: "test3번의 포트폴리오",
+          filterVal: "edit",
+          subTitle: "SNS CONTENTS2",
+          title: "유선희 바보",
+          period: "2019.05.21 - 05.24",
+          work: "디자인 및 리사이징",
+          tool: "Ps/Ai",
+          contents: "이오스안과 SNS 인스타그램&페이스북 등에 노출 되는 광고 배너",
         },
         {
           idx: 4,
           image: profileImg3,
-          filterVal: "c",
-          title: "test4",
-          contents: "test4번의 포트폴리오",
-        },
-        {
-          idx: 5,
-          image: profileImg3,
-          filterVal: "c",
-          title: "test5",
-          contents: "test5번의 포트폴리오",
-        },
-        {
-          idx: 6,
-          image: profileImg3,
-          filterVal: "c",
-          title: "test6",
-          contents: "test6번의 포트폴리오",
-        },
-        {
-          idx: 7,
-          image: profileImg,
-          filterVal: "a",
-          title: "test7",
-          contents: "test1번의 포트폴리오",
-        },
-        {
-          idx: 8,
-          image: profileImg,
-          filterVal: "a",
-          title: "test8",
-          contents: "test2번의 포트폴리오",
-        },
-        {
-          idx: 9,
-          image: profileImg2,
-          filterVal: "b",
-          title: "test9",
-          contents: "test3번의 포트폴리오",
-        },
-        {
-          idx: 10,
-          image: profileImg3,
-          filterVal: "c",
-          title: "test10",
-          contents: "test4번의 포트폴리오",
-        },
-        {
-          idx: 11,
-          image: profileImg3,
-          filterVal: "c",
-          title: "test11",
-          contents: "test5번의 포트폴리오",
-        },
-        {
-          idx: 12,
-          image: profileImg,
-          filterVal: "a",
-          title: "test12",
-          contents: "test1번의 포트폴리오",
-        },
-        {
-          idx: 13,
-          image: profileImg,
-          filterVal: "a",
-          title: "test13",
-          contents: "test2번의 포트폴리오",
-        },
-        {
-          idx: 14,
-          image: profileImg2,
-          filterVal: "b",
-          title: "test14",
-          contents: "test3번의 포트폴리오",
-        },
-        {
-          idx: 15,
-          image: profileImg3,
-          filterVal: "c",
-          title: "test15",
-          contents: "test4번의 포트폴리오",
-        },
-        {
-          idx: 16,
-          image: profileImg3,
-          filterVal: "c",
-          title: "test16",
-          contents: "test5번의 포트폴리오",
-        },
-        {
-          idx: 17,
-          image: profileImg3,
-          filterVal: "c",
-          title: "test17",
-          contents: "test6번의 포트폴리오",
-        },
-        {
-          idx: 18,
-          image: profileImg,
-          filterVal: "a",
-          title: "test18",
-          contents: "test1번의 포트폴리오",
-        },
-        {
-          idx: 19,
-          image: profileImg,
-          filterVal: "a",
-          title: "test19",
-          contents: "test2번의 포트폴리오",
-        },
-        {
-          idx: 20,
-          image: profileImg2,
-          filterVal: "b",
-          title: "test20",
-          contents: "test3번의 포트폴리오",
-        },
-        {
-          idx: 21,
-          image: profileImg3,
-          filterVal: "c",
-          title: "test21",
-          contents: "test4번의 포트폴리오",
-        },
-        {
-          idx: 22,
-          image: profileImg3,
-          filterVal: "c",
-          title: "test22",
-          contents: "test5번의 포트폴리오",
-        },
+          filterVal: "etc",
+          subTitle: "SNS CONTENTS2",
+          title: "test1",
+          period: "2019.05.21 - 05.24",
+          work: "디자인 및 리사이징",
+          tool: "Ps/Ai",
+          contents: "이오스안과 SNS 인스타그램&페이스북 등에 노출 되는 광고 배너",
+        }
       ], //포트폴리오 전체 json
       filterPortfolioArr: [], //필터상태 포트폴리오 json
       showPortfolioArr: [], //한페이지에 보여줘야 할 json
@@ -209,15 +100,15 @@ class Portfolio extends Component {
       filterPortfolioArr = _portfolioArr;
     } else if (num === 1) {
       filterPortfolioArr = _portfolioArr.filter(
-        (portfolio) => portfolio.filterVal === "a"
+        (portfolio) => portfolio.filterVal === "device"
       );
     } else if (num === 2) {
       filterPortfolioArr = _portfolioArr.filter(
-        (portfolio) => portfolio.filterVal === "b"
+        (portfolio) => portfolio.filterVal === "edit"
       );
     } else if (num === 3) {
       filterPortfolioArr = _portfolioArr.filter(
-        (portfolio) => portfolio.filterVal === "c"
+        (portfolio) => portfolio.filterVal === "etc"
       );
     }
 
@@ -279,7 +170,6 @@ class Portfolio extends Component {
             <span />
             <span />
             <span />
-            <div>{portfolio.title}</div>
             <img src={portfolio.image} />
           </div>
         </div>

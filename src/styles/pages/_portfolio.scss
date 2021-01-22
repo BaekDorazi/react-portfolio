@@ -126,19 +126,6 @@
       .screen:hover span:nth-child(4) {
         height: 100%;
       }
-
-      .screen div {
-        display: none;
-      }
-
-      .screen:hover div {
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        color: white;
-        font-size: 20pt;
-      }
     }
   }
 }
