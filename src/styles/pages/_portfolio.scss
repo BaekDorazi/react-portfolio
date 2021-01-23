@@ -126,6 +126,23 @@
       .screen:hover span:nth-child(4) {
         height: 100%;
       }
+
+      .sub-title-container {
+        position: absolute;
+        top: 8%;
+        left: 6.5%;
+        font-size: 6pt;
+        color: black;
+      }
+
+      .title-container {
+        position: absolute;
+        top: 12%;
+        left: 6.5%;
+        font-size: 15pt;
+        font-weight: 800;
+        color: black;
+      }
     }
   }
 }

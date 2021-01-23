@@ -187,6 +187,8 @@ class Portfolio extends Component {
             <span />
             <span />
             <img src={portfolio.image} />
+            <div className="sub-title-container">{portfolio.subTitle}</div>
+            <div className="title-container">{portfolio.title}</div>
           </div>
         </div>
       );
