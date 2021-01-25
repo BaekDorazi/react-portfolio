@@ -14,6 +14,13 @@
   padding: 0 !important; //modal body의 패딩을 없애주기 위해
 }
 
+.close-btn {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  font-size: 15pt;
+}
+
 .sub-title-container {
   position: absolute;
   top: 4%;

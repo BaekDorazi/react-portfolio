@@ -20,11 +20,12 @@ class PortfolioModal extends Component {
           {/* <ModalHeader toggle={toggle}>{portfolioInfo.title}</ModalHeader> */}
           <ModalBody>
             <img src={portfolioInfo.image} width="100%" height="auto" />
+            <i className="close-btn" onClick={toggle}>
+              X
+            </i>
             <div className="sub-title-container">{portfolioInfo.subTitle}</div>
             <div className="title-container">{portfolioInfo.title}</div>
-            <div className="contents-container">
-              {contentsComp}
-            </div>
+            <div className="contents-container">{contentsComp}</div>
             <div className="period-container">
               <div className="container-title">PERIOD</div>
               <div className="container-contents">{portfolioInfo.period}</div>
