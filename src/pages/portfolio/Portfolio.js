@@ -1,8 +1,41 @@
 import React, { Component } from "react";
-import profileImg from "../../images/screensaver_01.png";
-import profileImg2 from "../../images/homepage_01.png";
-import profileImg3 from "../../images/webbanner_01.png";
-import portfolioTest from "../../images/portfolio_test.png";
+
+import profileImg01 from "../../images/sns_contents_banner03.png";
+import profileImg02 from "../../images/medical_ad_banner01.png";
+import profileImg03 from "../../images/event_page03.png";
+import profileImg04 from "../../images/platform_banner02.png";
+import profileImg05 from "../../images/wide_thumbnail01.png";
+import profileImg06 from "../../images/web_banner01.png";
+import profileImg07 from "../../images/home_page01.png";
+import profileImg08 from "../../images/promotion_banner01.png";
+import profileImg09 from "../../images/promotion_banner02.png";
+import profileImg10 from "../../images/event_page02.png";
+import profileImg11 from "../../images/event_page01.png";
+import profileImg12 from "../../images/platform_banner01.png";
+import profileImg13 from "../../images/screen_saver01.png";
+import profileImg14 from "../../images/main_page01.png";
+import profileImg15 from "../../images/popup_banner01.png";
+import profileImg16 from "../../images/promotion_banner03.png";
+import profileImg17 from "../../images/detail_page02.png";
+import profileImg18 from "../../images/detail_page01.png";
+import profileImg19 from "../../images/mobile_app01.png";
+
+import profileImg100 from "../../images/sheet_paper01.png";
+import profileImg101 from "../../images/brochure03.png";
+import profileImg102 from "../../images/brochure01.png";
+import profileImg103 from "../../images/calling_card01.png";
+import profileImg104 from "../../images/calendar01.png";
+import profileImg105 from "../../images/placard_banner01.png";
+import profileImg106 from "../../images/x_banner01.png";
+import profileImg107 from "../../images/cover_of_magazine01.png";
+import profileImg108 from "../../images/brochure02.png";
+import profileImg109 from "../../images/outdoor_advertising01.png";
+import profileImg110 from "../../images/plaque01.png";
+import profileImg111 from "../../images/x_banner02.png";
+import profileImg112 from "../../images/space_of_a_magazine01.png";
+
+import profileImg113 from "../../images/video_editing01.png";
+
 import Pagination from "components/Pagination";
 import PortfolioModal from "components/PortfolioModal/PortfolioModal";
 
@@ -14,62 +47,497 @@ class Portfolio extends Component {
       portfolioArr: [
         {
           idx: 1,
-          image: portfolioTest,
+          image: profileImg01,
           filterVal: "device", //웹/모바일(device), 편집디자인(edit), 기타(etc) 필터값
           subTitle: "SNS CONTENTS",
-          title: "콘텐츠 배너",
-          period: "2019.05.21 - 05.24",
-          work: "디자인 및 리사이징",
-          tool: "Ps/Ai",
+          title: "인스타그램 콘텐츠",
+          period: "2020.05.01 - 09.01",
+          work: "기획 참여 및 디자인",
+          tool: "Ps / Ai",
           contents: [
-            "이오스안과 SNS",
-            "인스타그램&페이스북 등에",
-            "노출 되는 광고 배너",
+            "메이준뉴트리 건강식품",
+            "프로모션 이벤트 및",
+            "체험단 모집 등의 콘텐츠 배너",
           ],
         },
         {
           idx: 2,
-          image: profileImg,
-          filterVal: "edit",
-          subTitle: "SNS CONTENTS2",
-          title: "콘텐츠 배너2",
-          period: "2019.05.21 - 05.24",
-          work: "디자인 및 리사이징",
-          tool: "Ps/Ai",
+          image: profileImg02,
+          filterVal: "device",
+          subTitle: "MEDICAL AD BANNER",
+          title: "의료광고 배너",
+          period: "2018.07.20 - 07.21",
+          work: "디자인",
+          tool: "Ps / Ai",
           contents: [
-            "이오스안과 SNS",
-            "인스타그램&페이스북 등에",
-            "노출 되는 광고 배너",
+            "이오스안과 치료 장비",
+            "SNS&포털사이트 등의",
+            "온라인 광고 배너",
           ],
         },
         {
           idx: 3,
-          image: profileImg2,
-          filterVal: "edit",
-          subTitle: "SNS CONTENTS2",
-          title: "유선희 바보",
-          period: "2019.05.21 - 05.24",
-          work: "디자인 및 리사이징",
-          tool: "Ps/Ai",
+          image: profileImg03,
+          filterVal: "device",
+          subTitle: "EVENT PAGE",
+          title: "이벤트 페이지",
+          period: "2019.01.21 - 01.25",
+          work: "디자인",
+          tool: "Ps",
           contents: [
-            "이오스안과 SNS",
-            "인스타그램&페이스북 등에",
-            "노출 되는 광고 배너",
+            "드림성형외과 제휴 고객",
+            "현대백화점/우리은행/반얀트리",
+            "뉴스레터 이벤트 페이지",
           ],
         },
         {
           idx: 4,
-          image: profileImg3,
-          filterVal: "etc",
-          subTitle: "SNS CONTENTS2",
-          title: "test1",
+          image: profileImg04,
+          filterVal: "device",
+          subTitle: "PLATFORM BANNER",
+          title: "플랫폼 배너",
+          period: "2018.08.01 - 08.01",
+          work: "디자인",
+          tool: "Ps/Ai",
+          contents: [
+            "드림성형외과 중국어권",
+            "메디투안 디엔핑",
+            "윤곽 수술 광고 배너",
+          ],
+        },
+        {
+          idx: 5,
+          image: profileImg05,
+          filterVal: "device",
+          subTitle: "WIDE THUMBNAIL",
+          title: "와이드 섬네일",
+          period: "2018.07.09 - 07.12",
+          work: "디자인",
+          tool: "Ps/Ai",
+          contents: [
+            "드림성형외페이과",
+            "네이버 브랜드검색",
+            "와이드 썸네일",
+          ],
+        },
+        {
+          idx: 6,
+          image: profileImg06,
+          filterVal: "device",
+          subTitle: "WEB BANNER",
+          title: "온라인 광고 배너",
+          period: "2019.05.21 - 05.24",
+          work: "디자인 및 리사이징",
+          tool: "Ps / Ai",
+          contents: [
+            "온라인&웹 페이지에",
+            "노출 되는 드림성형외과",
+            "광고 배너",
+          ],
+        },
+        {
+          idx: 7,
+          image: profileImg07,
+          filterVal: "device",
+          subTitle: "HOME PAGE",
+          title: "홈페이지",
+          period: "2018.04.10 - 06.29",
+          work: "디자인 및 퍼블리싱",
+          tool: "Ps /Ai / Html / Css",
+          contents: [
+            "중소기업개발원의 홈페이지 전반",
+            "로고&메인&서브페이지 등",
+            "웹/모바일 디자인 및 퍼블리싱",
+          ],
+        },
+        {
+          idx: 8,
+          image: profileImg08,
+          filterVal: "device",
+          subTitle: "PLATFORM BANNER",
+          title: "프로모션 배너",
+          period: "2019.07.29 - 07.30",
+          work: "디자인",
+          tool: "Ps / Ai",
+          contents: [
+            "드림클리닉 중국어권",
+            "알리바바 사이트",
+            "여름 시즌 클리닉 광고 배너",
+          ],
+        },
+        {
+          idx: 9,
+          image: profileImg09,
+          filterVal: "device",
+          subTitle: "PROMOTION BANNER",
+          title: "프로모션 배너",
           period: "2019.05.21 - 05.24",
           work: "디자인 및 리사이징",
           tool: "Ps/Ai",
           contents: [
-            "이오스안과 SNS",
-            "인스타그램&페이스북 등에",
-            "노출 되는 광고 배너",
+            "메이준뉴트리",
+            "자사몰 단독 이벤트",
+            "롤링배너",
+          ],
+        },
+        {
+          idx: 10,
+          image: profileImg10,
+          filterVal: "device",
+          subTitle: "EVENT PAGE",
+          title: "이벤트 페이지",
+          period: "2017.10.09 - 10.18",
+          work: "디자인",
+          tool: "Ps / Ai",
+          contents: [
+            "이오스안과 홈페이지 리뉴얼 및",
+            "수험생&대학생 할인 혜택",
+            "이벤트 페이지",
+          ],
+        },
+        {
+          idx: 11,
+          image: profileImg11,
+          filterVal: "device",
+          subTitle: "EVENT PAGE",
+          title: "이벤트 페이지",
+          period: "2019.9.25 - 9.27",
+          work: "디자인",
+          tool: "Ps / Ai",
+          contents: [
+            "드림성형외과 중국어권",
+            "20주년 할인 혜택",
+            "이벤트 페이지",
+          ],
+        },
+        {
+          idx: 12,
+          image: profileImg12,
+          filterVal: "device",
+          subTitle: "PLATFORM BANNER",
+          title: "플랫폼 배너",
+          period: "2018.08.01 - 08.01",
+          work: "디자인",
+          tool: "Ps / Ai",
+          contents: [
+            "드림성형외과 중국어권",
+            "메디투안 디엔핑",
+            "윤곽 수술 광고 배너",
+          ],
+        },
+        {
+          idx: 13,
+          image: profileImg13,
+          filterVal: "device",
+          subTitle: "SCREEN SAVER",
+          title: "스크린세이버",
+          period: "2018.10.23 - 10.25",
+          work: "디자인",
+          tool: "Ps / Ai",
+          contents: [
+            "드림성형외과 원내의",
+            "모든 Pc/Dsktop 등에",
+            "화면보호기",
+          ],
+        },
+        {
+          idx: 14,
+          image: profileImg14,
+          filterVal: "device",
+          subTitle: "MAIN PAGE",
+          title: "메인페이지",
+          period: "2015.05.09 - 06.05",
+          work: "디자인",
+          tool: "Ps / Ai",
+          contents: [
+            "이오스안과 홈페이지의",
+            "메인페이지 리뉴얼",
+            "디자인 시안 2 version",
+          ],
+        },
+        {
+          idx: 15,
+          image: profileImg15,
+          filterVal: "device",
+          subTitle: "POPUP BANNER",
+          title: "그루비 팝업 배너",
+          period: "2019.05.21 - 05.24",
+          work: "디자인 및 리사이징",
+          tool: "Ps / Ai",
+          contents: [
+            "메이준뉴트리 자사몰",
+            "웹 페이지에 노출 되는",
+            "그루비 광고 팝업 배너",
+          ],
+        },
+        {
+          idx: 16,
+          image: profileImg16,
+          filterVal: "device",
+          subTitle: "PROMOTION BANNER",
+          title: "프로모션 배너",
+          period: "2015.05.01 - 05.25",
+          work: "디자인",
+          tool: "Ps / Ai",
+          contents: [
+            "메이준뉴트리",
+            "자사몰 단독 이벤트",
+            "시즌배너",
+          ],
+        },
+        {
+          idx: 17,
+          image: profileImg17,
+          filterVal: "device",
+          subTitle: "DETAIL PAGE",
+          title: "상세 페이지",
+          period: "2019.05.21 - 05.24",
+          work: "디자인 및 리사이징",
+          tool: "Ps / Ai",
+          contents: [
+            "메이준뉴트리",
+            "온라인 및 홈쇼핑 상품",
+            "소셜커머스 상세 페이지",
+          ],
+        },
+        {
+          idx: 18,
+          image: profileImg18,
+          filterVal: "device",
+          subTitle: "DETAIL PAGE",
+          title: "상세 페이지",
+          period: "2019.05.21 - 05.24",
+          work: "디자인 및 리사이징",
+          tool: "Ps / Ai",
+          contents: [
+            "메이준뉴트리",
+            "자사몰 단독상품",
+            "상세 페이지",
+          ],
+        },
+        {
+          idx: 19,
+          image: profileImg19,
+          filterVal: "device",
+          subTitle: "MOBILE APP",
+          title: "모바일 앱",
+          period: "2015.05.01 - 05.25",
+          work: "디자인",
+          tool: "Ps / Ai",
+          contents: [
+            "이오스안과 방문 전",
+            "비대면 자동접수와",
+            "사전문진을 위한 앱",
+          ],
+        },
+        {
+          idx: 20,
+          image: profileImg100,
+          filterVal: "edit",
+          subTitle: "SHEET PAPER",
+          title: "압구정 CGV 광고시트",
+          period: "2015.05.01 - 05.25",
+          work: "디자인",
+          tool: "Ps / Ai",
+          contents: [
+            "이오스안과 방문 전",
+            "비대면 자동접수와",
+            "사전문진을 위한 앱",
+          ],
+        },
+        {
+          idx: 21,
+          image: profileImg101,
+          filterVal: "edit",
+          subTitle: "BROCHURE",
+          title: "브로슈어",
+          period: "2015.05.01 - 05.25",
+          work: "디자인",
+          tool: "Ps / Ai",
+          contents: [
+            "이오스안과 방문 전",
+            "비대면 자동접수와",
+            "사전문진을 위한 앱",
+          ],
+        },
+        {
+          idx: 22,
+          image: profileImg102,
+          filterVal: "edit",
+          subTitle: "BROCHURE",
+          title: "브로슈어",
+          period: "2015.05.01 - 05.25",
+          work: "디자인",
+          tool: "Ps / Ai",
+          contents: [
+            "이오스안과 방문 전",
+            "비대면 자동접수와",
+            "사전문진을 위한 앱",
+          ],
+        },
+        {
+          idx: 23,
+          image: profileImg103,
+          filterVal: "edit",
+          subTitle: "CALLING CARD",
+          title: "로고&명함 제작",
+          period: "2015.05.01 - 05.25",
+          work: "디자인",
+          tool: "Ps / Ai",
+          contents: [
+            "이오스안과 방문 전",
+            "비대면 자동접수와",
+            "사전문진을 위한 앱",
+          ],
+        },
+        {
+          idx: 24,
+          image: profileImg104,
+          filterVal: "edit",
+          subTitle: "CALENDAR",
+          title: "달력",
+          period: "2015.05.01 - 05.25",
+          work: "디자인",
+          tool: "Ps / Ai",
+          contents: [
+            "이오스안과 방문 전",
+            "비대면 자동접수와",
+            "사전문진을 위한 앱",
+          ],
+        },
+        {
+          idx: 25,
+          image: profileImg105,
+          filterVal: "edit",
+          subTitle: "PLACARD BANNER",
+          title: "플래카드",
+          period: "2015.05.01 - 05.25",
+          work: "디자인",
+          tool: "Ps / Ai",
+          contents: [
+            "이오스안과 방문 전",
+            "비대면 자동접수와",
+            "사전문진을 위한 앱",
+          ],
+        },
+        {
+          idx: 26,
+          image: profileImg106,
+          filterVal: "edit",
+          subTitle: "X-BANNER",
+          title: "X-배너",
+          period: "2015.05.01 - 05.25",
+          work: "디자인",
+          tool: "Ps / Ai",
+          contents: [
+            "이오스안과 방문 전",
+            "비대면 자동접수와",
+            "사전문진을 위한 앱",
+          ],
+        },
+        {
+          idx: 27,
+          image: profileImg107,
+          filterVal: "edit",
+          subTitle: "COVER OF MAGAZINE",
+          title: "매거진 표지",
+          period: "2015.05.01 - 05.25",
+          work: "디자인",
+          tool: "Ps / Ai",
+          contents: [
+            "이오스안과 방문 전",
+            "비대면 자동접수와",
+            "사전문진을 위한 앱",
+          ],
+        },
+        {
+          idx: 28,
+          image: profileImg108,
+          filterVal: "edit",
+          subTitle: "BROCHURE",
+          title: "브로슈어",
+          period: "2015.05.01 - 05.25",
+          work: "디자인",
+          tool: "Ps / Ai",
+          contents: [
+            "이오스안과 방문 전",
+            "비대면 자동접수와",
+            "사전문진을 위한 앱",
+          ],
+        },
+        {
+          idx: 29,
+          image: profileImg109,
+          filterVal: "edit",
+          subTitle: "OUTDOOR ADVERTISING",
+          title: "옥외광고",
+          period: "2015.05.01 - 05.25",
+          work: "디자인",
+          tool: "Ps / Ai",
+          contents: [
+            "이오스안과 방문 전",
+            "비대면 자동접수와",
+            "사전문진을 위한 앱",
+          ],
+        },
+        {
+          idx: 30,
+          image: profileImg110,
+          filterVal: "edit",
+          subTitle: "PLAQUE",
+          title: "상패",
+          period: "2015.05.01 - 05.25",
+          work: "디자인",
+          tool: "Ps / Ai",
+          contents: [
+            "이오스안과 방문 전",
+            "비대면 자동접수와",
+            "사전문진을 위한 앱",
+          ],
+        },
+        {
+          idx: 31,
+          image: profileImg111,
+          filterVal: "edit",
+          subTitle: "X-BANNER",
+          title: "X-배너",
+          period: "2015.05.01 - 05.25",
+          work: "디자인",
+          tool: "Ps / Ai",
+          contents: [
+            "이오스안과 방문 전",
+            "비대면 자동접수와",
+            "사전문진을 위한 앱",
+          ],
+        },
+        {
+          idx: 32,
+          image: profileImg112,
+          filterVal: "edit",
+          subTitle: "SPACE OF A MAGAZINE",
+          title: "매거진 지면 광고",
+          period: "2015.05.01 - 05.25",
+          work: "디자인",
+          tool: "Ps / Ai",
+          contents: [
+            "이오스안과 방문 전",
+            "비대면 자동접수와",
+            "사전문진을 위한 앱",
+          ],
+        },
+        {
+          idx: 33,
+          image: profileImg113,
+          filterVal: "etc",
+          subTitle: "VIDEO EDITING",
+          title: "영상 편집",
+          period: "2015.05.01 - 05.25",
+          work: "디자인",
+          tool: "Ps / Ai",
+          contents: [
+            "이오스안과 방문 전",
+            "비대면 자동접수와",
+            "사전문진을 위한 앱",
           ],
         },
       ], //포트폴리오 전체 json
