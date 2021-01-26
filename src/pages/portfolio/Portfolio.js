@@ -6,13 +6,13 @@ import profileImg03 from "../../images/event_page03.png";
 import profileImg04 from "../../images/platform_banner02.png";
 import profileImg05 from "../../images/wide_thumbnail01.png";
 import profileImg06 from "../../images/web_banner01.png";
-import profileImg07 from "../../images/home_page01.png";
-import profileImg08 from "../../images/promotion_banner01.png";
+import profileImg07 from "../../images/platform_banner01.png";
+import profileImg08 from "../../images/home_page01.png";
 import profileImg09 from "../../images/promotion_banner02.png";
 import profileImg10 from "../../images/event_page02.png";
 import profileImg11 from "../../images/event_page01.png";
-import profileImg12 from "../../images/platform_banner01.png";
-import profileImg13 from "../../images/screen_saver01.png";
+import profileImg12 from "../../images/screen_saver01.png";
+import profileImg13 from "../../images/promotion_banner01.png";
 import profileImg14 from "../../images/main_page01.png";
 import profileImg15 from "../../images/popup_banner01.png";
 import profileImg16 from "../../images/promotion_banner03.png";
@@ -21,7 +21,7 @@ import profileImg18 from "../../images/detail_page01.png";
 import profileImg19 from "../../images/mobile_app01.png";
 
 import profileImg100 from "../../images/sheet_paper01.png";
-import profileImg101 from "../../images/brochure03.png";
+import profileImg101 from "../../images/catalog01.png";
 import profileImg102 from "../../images/brochure01.png";
 import profileImg103 from "../../images/calling_card01.png";
 import profileImg104 from "../../images/calendar01.png";
@@ -30,10 +30,10 @@ import profileImg106 from "../../images/x_banner01.png";
 import profileImg107 from "../../images/cover_of_magazine01.png";
 import profileImg108 from "../../images/brochure02.png";
 import profileImg109 from "../../images/outdoor_advertising01.png";
-import profileImg110 from "../../images/plaque01.png";
-import profileImg111 from "../../images/x_banner02.png";
-import profileImg112 from "../../images/space_of_a_magazine01.png";
+import profileImg110 from "../../images/x_banner02.png";
+import profileImg111 from "../../images/space_of_a_magazine01.png";
 
+import profileImg112 from "../../images/trophy01.png";
 import profileImg113 from "../../images/video_editing01.png";
 
 import Pagination from "components/Pagination";
@@ -114,11 +114,7 @@ class Portfolio extends Component {
           period: "2018.07.09 - 07.12",
           work: "디자인",
           tool: "Ps/Ai",
-          contents: [
-            "드림성형외페이과",
-            "네이버 브랜드검색",
-            "와이드 썸네일",
-          ],
+          contents: ["드림성형외페이과", "네이버 브랜드검색", "와이드 썸네일"],
         },
         {
           idx: 6,
@@ -139,6 +135,22 @@ class Portfolio extends Component {
           idx: 7,
           image: profileImg07,
           filterVal: "device",
+          subTitle: "PLATFORM BANNER",
+          title: "프로모션 배너",
+          period: "2019.07.29 - 07.30",
+          work: "디자인",
+          tool: "Ps / Ai",
+          contents: [
+            "드림클리닉 중국어권",
+            "알리바바 사이트",
+            "여름 시즌 클리닉 광고 배너",
+          ],
+        },
+
+        {
+          idx: 8,
+          image: profileImg08,
+          filterVal: "device",
           subTitle: "HOME PAGE",
           title: "홈페이지",
           period: "2018.04.10 - 06.29",
@@ -151,21 +163,6 @@ class Portfolio extends Component {
           ],
         },
         {
-          idx: 8,
-          image: profileImg08,
-          filterVal: "device",
-          subTitle: "PLATFORM BANNER",
-          title: "프로모션 배너",
-          period: "2019.07.29 - 07.30",
-          work: "디자인",
-          tool: "Ps / Ai",
-          contents: [
-            "드림클리닉 중국어권",
-            "알리바바 사이트",
-            "여름 시즌 클리닉 광고 배너",
-          ],
-        },
-        {
           idx: 9,
           image: profileImg09,
           filterVal: "device",
@@ -174,11 +171,7 @@ class Portfolio extends Component {
           period: "2019.05.21 - 05.24",
           work: "디자인 및 리사이징",
           tool: "Ps/Ai",
-          contents: [
-            "메이준뉴트리",
-            "자사몰 단독 이벤트",
-            "롤링배너",
-          ],
+          contents: ["메이준뉴트리", "자사몰 단독 이벤트", "롤링배너"],
         },
         {
           idx: 10,
@@ -214,21 +207,6 @@ class Portfolio extends Component {
           idx: 12,
           image: profileImg12,
           filterVal: "device",
-          subTitle: "PLATFORM BANNER",
-          title: "플랫폼 배너",
-          period: "2018.08.01 - 08.01",
-          work: "디자인",
-          tool: "Ps / Ai",
-          contents: [
-            "드림성형외과 중국어권",
-            "메디투안 디엔핑",
-            "윤곽 수술 광고 배너",
-          ],
-        },
-        {
-          idx: 13,
-          image: profileImg13,
-          filterVal: "device",
           subTitle: "SCREEN SAVER",
           title: "스크린세이버",
           period: "2018.10.23 - 10.25",
@@ -238,6 +216,21 @@ class Portfolio extends Component {
             "드림성형외과 원내의",
             "모든 Pc/Dsktop 등에",
             "화면보호기",
+          ],
+        },
+        {
+          idx: 13,
+          image: profileImg13,
+          filterVal: "device",
+          subTitle: "PLATFORM BANNER",
+          title: "플랫폼 배너",
+          period: "2018.08.01 - 08.01",
+          work: "디자인",
+          tool: "Ps / Ai",
+          contents: [
+            "드림성형외과 중국어권",
+            "메디투안 디엔핑",
+            "윤곽 수술 광고 배너",
           ],
         },
         {
@@ -279,11 +272,7 @@ class Portfolio extends Component {
           period: "2015.05.01 - 05.25",
           work: "디자인",
           tool: "Ps / Ai",
-          contents: [
-            "메이준뉴트리",
-            "자사몰 단독 이벤트",
-            "시즌배너",
-          ],
+          contents: ["메이준뉴트리", "자사몰 단독 이벤트", "시즌배너"],
         },
         {
           idx: 17,
@@ -309,11 +298,7 @@ class Portfolio extends Component {
           period: "2019.05.21 - 05.24",
           work: "디자인 및 리사이징",
           tool: "Ps / Ai",
-          contents: [
-            "메이준뉴트리",
-            "자사몰 단독상품",
-            "상세 페이지",
-          ],
+          contents: ["메이준뉴트리", "자사몰 단독상품", "상세 페이지"],
         },
         {
           idx: 19,
@@ -335,75 +320,59 @@ class Portfolio extends Component {
           image: profileImg100,
           filterVal: "edit",
           subTitle: "SHEET PAPER",
-          title: "압구정 CGV 광고시트",
-          period: "2015.05.01 - 05.25",
+          title: "광고 시트 배너",
+          period: "2018.05.21 - 05.24",
           work: "디자인",
           tool: "Ps / Ai",
-          contents: [
-            "이오스안과 방문 전",
-            "비대면 자동접수와",
-            "사전문진을 위한 앱",
-          ],
+          contents: ["드림성형외과", "압구정 CGV", "광고 시트배너"],
         },
         {
           idx: 21,
           image: profileImg101,
           filterVal: "edit",
-          subTitle: "BROCHURE",
-          title: "브로슈어",
-          period: "2015.05.01 - 05.25",
+          subTitle: "CATALOG",
+          title: "카달로그",
+          period: "2020.04.13 - 04.15",
           work: "디자인",
           tool: "Ps / Ai",
-          contents: [
-            "이오스안과 방문 전",
-            "비대면 자동접수와",
-            "사전문진을 위한 앱",
-          ],
+          contents: ["메이준 스킨케어", "홈쇼핑 제품", "홍보/설명 카달로그"],
         },
         {
           idx: 22,
           image: profileImg102,
           filterVal: "edit",
           subTitle: "BROCHURE",
-          title: "브로슈어",
-          period: "2015.05.01 - 05.25",
+          title: "브로슈어/책자",
+          period: "2017.11.06 - 01.16",
           work: "디자인",
           tool: "Ps / Ai",
           contents: [
-            "이오스안과 방문 전",
-            "비대면 자동접수와",
-            "사전문진을 위한 앱",
+            "이오스안과",
+            "담당의사 약력 및 마이챠트",
+            "책자/브로슈어",
           ],
         },
         {
           idx: 23,
           image: profileImg103,
           filterVal: "edit",
-          subTitle: "CALLING CARD",
-          title: "로고&명함 제작",
-          period: "2015.05.01 - 05.25",
+          subTitle: "LOGO/CALLING CARD",
+          title: "로고/명함",
+          period: "2018.04.02 - 04.06",
           work: "디자인",
-          tool: "Ps / Ai",
-          contents: [
-            "이오스안과 방문 전",
-            "비대면 자동접수와",
-            "사전문진을 위한 앱",
-          ],
+          tool: "Ai",
+          contents: ["경영 컨설팅 업체", "비즈마켓 LOGO CIBI", "로고/명함"],
         },
         {
           idx: 24,
           image: profileImg104,
           filterVal: "edit",
           subTitle: "CALENDAR",
-          title: "달력",
-          period: "2015.05.01 - 05.25",
+          title: "스케줄 캘린더",
+          period: "2019.09.23 - 10.16",
           work: "디자인",
           tool: "Ps / Ai",
-          contents: [
-            "이오스안과 방문 전",
-            "비대면 자동접수와",
-            "사전문진을 위한 앱",
-          ],
+          contents: ["드림메디컬그룹", "2020년도", "탁상용 달력"],
         },
         {
           idx: 25,
@@ -411,13 +380,13 @@ class Portfolio extends Component {
           filterVal: "edit",
           subTitle: "PLACARD BANNER",
           title: "플래카드",
-          period: "2015.05.01 - 05.25",
+          period: "2018.06.11 - 06.11",
           work: "디자인",
-          tool: "Ps / Ai",
+          tool: "Ai",
           contents: [
-            "이오스안과 방문 전",
-            "비대면 자동접수와",
-            "사전문진을 위한 앱",
+            "중소기업개발원",
+            "기업성장전략 컨퍼런스",
+            "베트남 다낭 출장 플래카드",
           ],
         },
         {
@@ -426,13 +395,13 @@ class Portfolio extends Component {
           filterVal: "edit",
           subTitle: "X-BANNER",
           title: "X-배너",
-          period: "2015.05.01 - 05.25",
+          period: "2017.02.01 - 02.13",
           work: "디자인",
           tool: "Ps / Ai",
           contents: [
-            "이오스안과 방문 전",
-            "비대면 자동접수와",
-            "사전문진을 위한 앱",
+            "이오스안과",
+            "학회발표자료 및 이벤트",
+            "원내 X배너/미니배너",
           ],
         },
         {
@@ -441,14 +410,10 @@ class Portfolio extends Component {
           filterVal: "edit",
           subTitle: "COVER OF MAGAZINE",
           title: "매거진 표지",
-          period: "2015.05.01 - 05.25",
+          period: "2019.04.03 - 04.10",
           work: "디자인",
           tool: "Ps / Ai",
-          contents: [
-            "이오스안과 방문 전",
-            "비대면 자동접수와",
-            "사전문진을 위한 앱",
-          ],
+          contents: ["드림성형외과", "태국 연예인 모델", "잡지 표지"],
         },
         {
           idx: 28,
@@ -456,88 +421,72 @@ class Portfolio extends Component {
           filterVal: "edit",
           subTitle: "BROCHURE",
           title: "브로슈어",
-          period: "2015.05.01 - 05.25",
+          period: "2019.03.18 - 03.21",
           work: "디자인",
           tool: "Ps / Ai",
-          contents: [
-            "이오스안과 방문 전",
-            "비대면 자동접수와",
-            "사전문진을 위한 앱",
-          ],
+          contents: ["드림성형외과", "강남구 의료관광센터", "홍보 브로슈어"],
         },
         {
           idx: 29,
           image: profileImg109,
           filterVal: "edit",
           subTitle: "OUTDOOR ADVERTISING",
-          title: "옥외광고",
-          period: "2015.05.01 - 05.25",
+          title: "와이드 스크린 옥외광고",
+          period: "2019.01.28 - 02.08",
           work: "디자인",
           tool: "Ps / Ai",
-          contents: [
-            "이오스안과 방문 전",
-            "비대면 자동접수와",
-            "사전문진을 위한 앱",
-          ],
+          contents: ["드림성형외과", "압구정역/교대역", "지하철 옥외광고"],
         },
         {
           idx: 30,
           image: profileImg110,
           filterVal: "edit",
-          subTitle: "PLAQUE",
-          title: "상패",
-          period: "2015.05.01 - 05.25",
+          subTitle: "X-BANNER",
+          title: "X-배너",
+          period: "2019.06.19 - 09.21",
           work: "디자인",
           tool: "Ps / Ai",
           contents: [
-            "이오스안과 방문 전",
-            "비대면 자동접수와",
-            "사전문진을 위한 앱",
+            "드림성형외과",
+            "태국&중국 박람회",
+            "성형모델 수술 전후 X배너",
           ],
         },
         {
           idx: 31,
           image: profileImg111,
           filterVal: "edit",
-          subTitle: "X-BANNER",
-          title: "X-배너",
-          period: "2015.05.01 - 05.25",
+          subTitle: "SPACE OF A MAGAZINE",
+          title: "매거진 지면 광고",
+          period: "2016.09.11 - 09.20",
           work: "디자인",
           tool: "Ps / Ai",
-          contents: [
-            "이오스안과 방문 전",
-            "비대면 자동접수와",
-            "사전문진을 위한 앱",
-          ],
+          contents: ["이오스안과", "군인잡지 HIM", "라섹 홍보전단"],
         },
         {
           idx: 32,
           image: profileImg112,
-          filterVal: "edit",
-          subTitle: "SPACE OF A MAGAZINE",
-          title: "매거진 지면 광고",
-          period: "2015.05.01 - 05.25",
+          filterVal: "etc",
+          subTitle: "TROPHY",
+          title: "상패",
+          period: "2019.02.04 - 02.06",
           work: "디자인",
-          tool: "Ps / Ai",
-          contents: [
-            "이오스안과 방문 전",
-            "비대면 자동접수와",
-            "사전문진을 위한 앱",
-          ],
+          tool: "Ai",
+          contents: ["드림성형외과", "K-뷰티산업협회", "공식인증 병원 상패"],
         },
         {
           idx: 33,
           image: profileImg113,
           filterVal: "etc",
           subTitle: "VIDEO EDITING",
-          title: "영상 편집",
-          period: "2015.05.01 - 05.25",
-          work: "디자인",
-          tool: "Ps / Ai",
+          title: "영상 기획/편집",
+          period: "2019.02.18 - 03.18",
+          work: "영상 기획/편집",
+          tool: "Ps / Ai / Ae",
           contents: [
-            "이오스안과 방문 전",
-            "비대면 자동접수와",
-            "사전문진을 위한 앱",
+            "드림성형외과 리얼모델",
+            "메이킹영상 스토리보드 및",
+            "스튜디오촬영 컨셉 기획",
           ],
         },
       ], //포트폴리오 전체 json
