@@ -5,6 +5,40 @@ import WorkingLatePukg from "components/Illustrations/WorkingLatePukg";
 import Rpm6 from "components/Illustrations/Rpm6";
 
 class Contact extends Component {
+  copyToClipboard = () => {
+    /* Get the text field */
+    // let copyText = document.getElementById("myInput");
+    let copyText = document.getElementsByClassName("zzz");
+
+    /* Select the text field */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+
+    /* Alert the copied text */
+    alert("Copied the text: " + copyText.value);
+  };
+
+  copyStringToClipboard = (str) => {
+    // Create new element
+    var el = document.createElement("textarea");
+    // Set value (string to be copied)
+    el.value = str;
+    // Set non-editable to avoid focus and move outside of view
+    el.setAttribute("readonly", "");
+    // el.style = { position: "absolute", left: "-9999px" };
+    document.body.appendChild(el);
+    // Select text inside element
+    el.select();
+    // Copy text to clipboard
+    document.execCommand("copy");
+    // Remove temporary element
+    document.body.removeChild(el);
+    alert("e-mail이 복사되었습니다. ✿˘◡˘✿");
+  };
+
   render() {
     return (
       <div className="contact-container">
@@ -62,36 +96,30 @@ class Contact extends Component {
 
         <div className="image-area">
           <ul>
-            {/* <li>
-              <div class="image">
-                <WorkingLatePukg />
-              </div>
-              <div class="shadow"></div>
-            </li> */}
             <li>
               <div class="image">
                 <WorkspaceHwky />
               </div>
               <div class="shadow"></div>
             </li>
-            {/* <li>
-              <div class="image">
-                <Rpm6 />
-              </div>
-              <div class="shadow"></div>
-            </li> */}
           </ul>
 
           <div className="stats">
             <div>
-              <i className="icon-bubbles box" onClick={this.test}>
-                {" "}
-                {/* {!talkClick ? "talk" : "yusunhee18"} */}
-                talk
-              </i>
+              <a href="https://open.kakao.com/o/sjHGitPc" target="_blank">
+                <i className="icon-bubbles box"> talk</i>
+              </a>
             </div>
             <div>
-              <i className="icon-drawer2 box"> mail</i>
+              <i
+                className="icon-drawer2 box"
+                onClick={() =>
+                  this.copyStringToClipboard("yusunhee_@naver.com")
+                }
+              >
+                {" "}
+                mail
+              </i>
             </div>
             <div>
               <a href="https://www.instagram.com/yusunhee_/" target="_blank">

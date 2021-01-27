@@ -35,9 +35,30 @@
         grid-template-rows: 1fr;
 
         //프로필 이미지
-        .profile-img {
-          width: 100%;
-          height: auto;
+        .hashtag {
+          .profile-img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+          }
+        }
+
+        .on-mouse {
+          opacity: 0.1;
+          align-self: end;
+          margin-bottom: 50px;
+
+          .text {
+            text-align: -webkit-left;
+            margin-left: 20px;
+            font-size: 15pt;
+            cursor: help;
+          }
+        }
+
+        .hashtag:hover + .on-mouse {
+          opacity: 1;
+          color: rgb(0, 0, 0);
         }
       }
     }
